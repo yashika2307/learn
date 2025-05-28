@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import React from "react";
 import 'tailwindcss';
-
+import { Link } from 'react-router-dom';
 
 const services = [
   {
@@ -41,10 +41,10 @@ export default function App() {
             <a href="#" className="text-black hover:text-blue-900 hover:font-bold">Home</a>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSeCWx4_C09BtXH-NO0K8HPaNAIT3OL2Cu4ZILtv__Dzz9lIyA/viewform?usp=header" className="text-black hover:text-blue-900 hover:font-bold">Find Care Provider</a>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLScEzOmNCmQ6suHCxLOgznQ1ZrJFP-SuQAyWh2UVN4m7h8dQqA/viewform?usp=header" className="text-black hover:text-blue-900 hover:font-bold">Become a Care Provider</a>
-            {/*<Link to="/AboutUs" className="text-black hover:text-blue-900 hover:font-bold">About Us</Link>*/}
-            {/*<Link to="/Support" className="text-black hover:text-blue-900 hover:font-bold">Support</Link>*/}
-           {/* <Link to="/Register" className="text-black hover:text-blue-900 hover:font-bold">Register</Link>*/}
-           {/* <Link to="/Signin" className="text-black hover:text-blue-900 hover:font-bold">Sign In</Link>*/}
+             <Link to="/AboutUs" className="text-black hover:text-blue-900 hover:font-bold">About Us</Link>
+            <Link to="/Support" className="text-black hover:text-blue-900 hover:font-bold">Support</Link>
+           <Link to="/Register" className="text-black hover:text-blue-900 hover:font-bold">Register</Link>
+           <Link to="/Signin" className="text-black hover:text-blue-900 hover:font-bold">Sign In</Link>
           
 
           </nav>
