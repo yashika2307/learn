@@ -5,12 +5,15 @@ import './App.css'
 import React from "react";
 import 'tailwindcss';
 import { Link } from 'react-router-dom';
+import ParentsVisit from './assets/parents-visit.png';
+import KidCare from './assets/kid-care.jpg';
+import SpeakToParents from './assets/speak-to-parents.jpg';
 
 const services = [
   {
     title: "Take my Parents for Visit",
     description: "Care taker can take your parents to hospital or anywhere else.",
-    image: "src/assets/parents-visit.png"
+    image: ParentsVisit
   },
   {
     title: "Look after my Kid",
@@ -23,6 +26,10 @@ const services = [
     image: "src/assets/speak-to-parents.jpg"
   }
 ];
+
+// import exampleImage from "../assets/example.png";
+
+// <img src={exampleImage} alt="Example" />;
 
 export default function App() {
   return (
@@ -66,7 +73,7 @@ export default function App() {
           </div>
           <div className="md:w-1/2">
             <img
-              src="src/assets/Group 4.png"
+              src="src/assets/Group4.png"
               alt="Family Care"
               className="w-full"
             />
