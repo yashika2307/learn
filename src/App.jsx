@@ -73,7 +73,7 @@ export default function App() {
           </div>
           <div className="md:w-1/2">
             <img
-              src="src/assets/Group4.png"
+              src={"src/assets/Group4.png"}
               alt="Family Care"
               className="w-full"
             />
