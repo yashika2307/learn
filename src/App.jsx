@@ -9,6 +9,7 @@ import ParentsVisit from './assets/parents-visit.png';
 import KidCare from './assets/kid-care.jpg';
 import SpeakToParents from './assets/speak-to-parents.jpg';
 import WelltogetherLogo from './assets/welltogether_logo.jpg';
+import group4 from './assets/Group4.png';
 
 const services = [
   {
@@ -74,7 +75,7 @@ export default function App() {
           </div>
           <div className="md:w-1/2">
             <img
-              src={"src/assets/Group4.png"}
+              src={group4}
               alt="Family Care"
               className="w-full"
             />
