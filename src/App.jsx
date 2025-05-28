@@ -25,6 +25,7 @@ const services = [
     title: "Spend time with parents",
     description: "Conversations are the best medicines! We believe that, care giver will speak to them.",
     image: SpeakToParents
+  }
 ];
 
 // import exampleImage from "../assets/example.png";
