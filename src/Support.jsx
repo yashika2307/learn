@@ -17,11 +17,11 @@ export default function ContactUsPage() {
               href="mailto:contactus@welltogether.in"
               className="text-blue-700 underline hover:font-bold"
             >
-              contactus@welltogether.in
+              growwithyashikaa@gmail.com
             </a>
           </p>
 
-          <p>
+          {/* <p>
             📞 Phone:{" "}
             <a
               href="tel:99999999"
@@ -29,7 +29,7 @@ export default function ContactUsPage() {
             >
               99999999
             </a>
-          </p>
+          </p> */}
 
           <p>
             💬 WhatsApp:{" "}
