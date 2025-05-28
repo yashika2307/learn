@@ -1,7 +1,11 @@
 import React from "react";
+import Header from "./Header";
+
 
 export default function AboutUs() {
   return (
+    <>
+    {/* <Header /> */}
     <div className="font-sans bg-white text-gray-800 py-10 px-6">
       <div className="max-w-5xl mx-auto">
         {/* Title */}
@@ -65,5 +69,6 @@ export default function AboutUs() {
         </section>
       </div>
     </div>
+    </>
   );
 }

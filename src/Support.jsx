@@ -1,4 +1,5 @@
 import React from "react";
+import Header from './Header';
 
 export default function ContactUsPage() {
   const whatsappNumber = "919999999999"; // Replace with actual number
@@ -6,6 +7,8 @@ export default function ContactUsPage() {
   const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
   return (
+    <>
+    {/* <Header /> */}
     <div className="min-h-screen flex items-center justify-center bg-gray-100 px-4 py-10">
       <div className="bg-white rounded-lg shadow-lg p-8 max-w-lg w-full text-center border border-gray-200">
         <h1 className="text-3xl font-bold mb-6 text-[#1e3a8a]">Contact Us</h1>
@@ -55,5 +58,6 @@ export default function ContactUsPage() {
         </div>
       </div>
     </div>
+ </>
   );
 }

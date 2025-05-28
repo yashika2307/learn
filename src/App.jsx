@@ -10,6 +10,8 @@ import KidCare from './assets/kid-care.jpg';
 import SpeakToParents from './assets/speak-to-parents.jpg';
 import WelltogetherLogo from './assets/welltogether_logo.jpg';
 import HomePage from './assets/HomePage.png';
+import Header from './Header';
+
 
 const services = [
   {
@@ -38,7 +40,10 @@ export default function App() {
 
     <div className="font-sans">
       {/* Header */}
-      <header className="bg-white shadow-md py-4 px-6">
+      {/* <Header /> */}
+
+      {/* Hero Section */}
+      {/* <header className="bg-white shadow-md py-4 px-6">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <div className="flex items-center space-x+8">
             <img src={WelltogetherLogo} alt="WellTogether" className="w-30 h-30" />
@@ -56,10 +61,10 @@ export default function App() {
            {/* <Link to="/Signin" className="text-black hover:text-blue-900 hover:font-bold">Sign In</Link> */}
           
 
-          </nav>
+          {/* </nav>
         </div>
         </div>
-      </header>
+      </header> */} 
 
     <div className="font-sans">
       {/* Section 1 - Hero */}

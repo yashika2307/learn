@@ -7,6 +7,7 @@ import AboutUs from './AboutUs.jsx'
 import Support from './Support.jsx'
 import Register from './Register.jsx'
 import SignIn from './SignIn.jsx'
+import Header from './Header.jsx'
 
 
 
@@ -19,6 +20,7 @@ createRoot(document.getElementById('root')).render(
 function Main() {
   return (
     <Router>
+      <Header></Header>
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/AboutUs" element={<AboutUs />} />
