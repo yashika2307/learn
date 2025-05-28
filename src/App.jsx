@@ -9,7 +9,7 @@ import ParentsVisit from './assets/parents-visit.png';
 import KidCare from './assets/kid-care.jpg';
 import SpeakToParents from './assets/speak-to-parents.jpg';
 import WelltogetherLogo from './assets/welltogether_logo.jpg';
-import group4 from './assets/Group4.png';
+import HomePage from './assets/HomePage.png';
 
 const services = [
   {
@@ -51,9 +51,9 @@ export default function App() {
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSeCWx4_C09BtXH-NO0K8HPaNAIT3OL2Cu4ZILtv__Dzz9lIyA/viewform?usp=header" className="text-black hover:text-blue-900 hover:font-bold">Find Care Provider</a>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLScEzOmNCmQ6suHCxLOgznQ1ZrJFP-SuQAyWh2UVN4m7h8dQqA/viewform?usp=header" className="text-black hover:text-blue-900 hover:font-bold">Become a Care Provider</a>
              <Link to="/AboutUs" className="text-black hover:text-blue-900 hover:font-bold">About Us</Link>
-            <Link to="/Support" className="text-black hover:text-blue-900 hover:font-bold">Support</Link>
-           <Link to="/Register" className="text-black hover:text-blue-900 hover:font-bold">Register</Link>
-           <Link to="/Signin" className="text-black hover:text-blue-900 hover:font-bold">Sign In</Link>
+            <Link to="/Support" className="text-black hover:text-blue-900 hover:font-bold">Contact Us</Link>
+           {/* <Link to="/Register" className="text-black hover:text-blue-900 hover:font-bold">Register</Link> */}
+           {/* <Link to="/Signin" className="text-black hover:text-blue-900 hover:font-bold">Sign In</Link> */}
           
 
           </nav>
@@ -63,11 +63,11 @@ export default function App() {
 
     <div className="font-sans">
       {/* Section 1 - Hero */}
-      <section className="bg-white px-6 py-10">
+      <section className="bg-FDFAF5 px-6 py-10">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between">
           <div className="md:w-1/2 mb-6 md:mb-0">
             <h1 className="text-4xl font-bold text-[#071a4d] mb-4">
-              Bringing Generations <br /> Together, With Care
+              Bringing Generations <br />Together, With Care
             </h1>
             <h2 className="text-2xl text-[#071a4d] mb-4">
               Connecting elderly and parents with <br /> college students providing care and <br /> companionship.
@@ -75,9 +75,9 @@ export default function App() {
           </div>
           <div className="md:w-1/2">
             <img
-              src={group4}
+              src={HomePage}
               alt="Family Care"
-              className="w-full"
+              className="w-full h-auto rounded-lg md:ml-6"
             />
           </div>
         </div>
@@ -111,8 +111,8 @@ export default function App() {
       {/* Section 3 - Join Community */}
       <section className="bg-[#f8f8fa] py-12 px-6 text-center">
         <h2 className="text-2xl font-semibold mb-2  text-black">Join the Community!</h2>
-        <p className="mb-4 text-lg font-medium text-black">If you want to help your community<br />Earn upto 1200 per day!</p>
-        <button className="bg-black text-black px-6 py-2 rounded hover:opacity-90">Become a Care Giver</button>
+        <p className="mb-4 text-lg font-medium text-black">If you want to help your community<br />Earn upto 40,000 per month!</p>
+        <button className="bg-blue-600 text-black px-6 py-2 rounded hover:opacity-90">Become a Care Giver</button>
       </section>
 
       {/* Section 4 - Why Us */}
