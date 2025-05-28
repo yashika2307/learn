@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom';
 import ParentsVisit from './assets/parents-visit.png';
 import KidCare from './assets/kid-care.jpg';
 import SpeakToParents from './assets/speak-to-parents.jpg';
+import WelltogetherLogo from './assets/welltogether_logo.jpg';
 
 const services = [
   {
@@ -18,13 +19,12 @@ const services = [
   {
     title: "Look after my Kid",
     description: "Care provider will take care of your kid at your place",
-    image: "src/assets/kid-care.jpg"
+    image: KidCare
   },
   {
     title: "Spend time with parents",
     description: "Conversations are the best medicines! We believe that, care giver will speak to them.",
-    image: "src/assets/speak-to-parents.jpg"
-  }
+    image: SpeakToParents
 ];
 
 // import exampleImage from "../assets/example.png";
@@ -39,7 +39,7 @@ export default function App() {
       <header className="bg-white shadow-md py-4 px-6">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <div className="flex items-center space-x+8">
-            <img src="src/assets/welltogether_logo.jpg" alt="WellTogether" className="w-30 h-30" />
+            <img src={WelltogetherLogo} alt="WellTogether" className="w-30 h-30" />
             <div className="text-2xl font-bold text-black">WellTogether</div>
           </div>
         <div className="max-w-7xl mx-auto flex justify-between items-center">
