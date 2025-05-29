@@ -104,16 +104,20 @@ body {
 
 .join-section button {
   background-color: black;
-  color: white;
+  color: rgba(17, 121, 119, 0.51);
   padding: 10px 20px;
-  border: none;
-  border-radius: 6px;
+  border: black;
+  border-radius: 16px;
   cursor: pointer;
 }
+
 
 .join-section button:hover {
   opacity: 0.9;
 }
+
+
+
 
 /* Why Us */
 .why-section {
@@ -154,3 +158,4 @@ body {
   margin: 5px 0;
   font-size: 14px;
 }
+

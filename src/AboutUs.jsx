@@ -7,9 +7,9 @@ export default function AboutUs() {
     <>
     {/* <Header /> */}
     <div className="font-sans bg-white text-gray-800 py-10 px-6">
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-100% mx-auto bg-[#f5f5f5]">
         {/* Title */}
-        <h1 className="text-4xl font-bold text-center text-blue-900 mb-6">
+        <h1 className="text-4xl font-bold text-center text-blue-900 mb-6 ">
           About Us
         </h1>
 
@@ -20,7 +20,7 @@ export default function AboutUs() {
 
         {/* Section 1 - Who We Are */}
         <section className="mb-10">
-          <h2 className="text-2xl font-semibold text-blue-800 mb-2">
+          <h2 className="text-2xl font-semibold text-blue-800 mb-2 ">
             Who We Are
           </h2>
           <p className="text-gray-700 text-lg leading-relaxed">

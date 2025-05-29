@@ -10,7 +10,7 @@ import KidCare from './assets/kid-care.jpg';
 import SpeakToParents from './assets/speak-to-parents.jpg';
 import WelltogetherLogo from './assets/welltogether_logo.jpg';
 import HomePage from './assets/HomePage.png';
-import Header from './Header';
+
 
 
 const services = [
@@ -21,7 +21,7 @@ const services = [
   },
   {
     title: "Look after my Kid",
-    description: "Care provider will take care of your kid at your place",
+    description: "Care provider will take care of your kid at your place.",
     image: KidCare
   },
   {
@@ -40,18 +40,15 @@ export default function App() {
 
     <div className="font-sans">
       {/* Header */}
-      {/* <Header /> */}
-
-      {/* Hero Section */}
-      {/* <header className="bg-white shadow-md py-4 px-6">
+      <header className="bg-white shadow-md py-4 px-6">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <div className="flex items-center space-x+8">
+          {/* <div className="flex items-center space-x+8">
             <img src={WelltogetherLogo} alt="WellTogether" className="w-30 h-30" />
             <div className="text-2xl font-bold text-black">WellTogether</div>
           </div>
-        <div className="max-w-7xl mx-auto flex justify-between items-center">
+        <div className="max-w-7xl mx-auto flex justify-between items-center"> */}
           
-          <nav className="space-x-4">
+          {/* {/* <nav className="space-x-4">
             <a href="#" className="text-black hover:text-blue-900 hover:font-bold">Home</a>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSeCWx4_C09BtXH-NO0K8HPaNAIT3OL2Cu4ZILtv__Dzz9lIyA/viewform?usp=header" className="text-black hover:text-blue-900 hover:font-bold">Find Care Provider</a>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLScEzOmNCmQ6suHCxLOgznQ1ZrJFP-SuQAyWh2UVN4m7h8dQqA/viewform?usp=header" className="text-black hover:text-blue-900 hover:font-bold">Become a Care Provider</a>
@@ -61,14 +58,14 @@ export default function App() {
            {/* <Link to="/Signin" className="text-black hover:text-blue-900 hover:font-bold">Sign In</Link> */}
           
 
-          {/* </nav>
+          
+        {/* </div> */}
         </div>
-        </div>
-      </header> */} 
+      </header>
 
     <div className="font-sans">
       {/* Section 1 - Hero */}
-      <section className="bg-FDFAF5 px-6 py-10">
+      <section className="px-6 py-10 bg-[#f5f5f5]">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between">
           <div className="md:w-1/2 mb-6 md:mb-0">
             <h1 className="text-4xl font-bold text-[#071a4d] mb-4">
@@ -117,7 +114,7 @@ export default function App() {
       <section className="bg-[#f8f8fa] py-12 px-6 text-center">
         <h2 className="text-2xl font-semibold mb-2  text-black">Join the Community!</h2>
         <p className="mb-4 text-lg font-medium text-black">If you want to help your community<br />Earn upto 40,000 per month!</p>
-        <button className="bg-blue-600 text-black px-6 py-2 rounded hover:opacity-90">Become a Care Giver</button>
+        <button className="bg-gradient-to-b from-blue-200 to-blue-600 text-black px-4 py-6 dark:from-blue-500 dark:to-blue-800 hover:from-blue-700 hover:to-blue-300  transition duration-300">Become a Care Giver</button>
       </section>
 
       {/* Section 4 - Why Us */}
@@ -129,27 +126,27 @@ export default function App() {
           <div>
             <div className="text-blue-600 text-3xl mb-2">🔍</div>
             <p className="font-medium  text-black">Care givers at your place</p>
-            <p className="text-sm  text-black">Your place, your rules, our care givers. All facility at the comfort of your home.</p>
+            <p className="text-sm  text-black">Your place, your rules, our care givers. All facilities at the comfort of your home.</p>
           </div>
           <div>
             <div className="text-blue-600 text-3xl mb-2">📅</div>
             <p className="font-medium  text-black">No commitments</p>
-            <p className="text-sm  text-black">Book for as many hours you want. No min hrs required.</p>
+            <p className="text-sm  text-black">Book for as many hours as you want. No min hrs required.</p>
           </div>
           <div>
             <div className="text-blue-600 text-3xl mb-2">🎓</div>
             <p className="font-medium  text-black">Educated care givers</p>
-            <p className="text-sm  text-black">Our care givers are well educated & understand foundation of kids should be strong</p>
+            <p className="text-sm  text-black">Our care givers are well educated.</p>
           </div>
           <div>
             <div className="text-blue-600 text-3xl mb-2">🛡️</div>
             <p className="font-medium  text-black">Verified Backgrounds</p>
-            <p className="text-sm  text-black">Expert legal advice to ease documentation process</p>
+            <p className="text-sm  text-black">Expert legal advice to ease documentation process.</p>
           </div>
           <div>
             <div className="text-blue-600 text-3xl mb-2">👁️</div>
             <p className="font-medium  text-black">Honest reviews</p>
-            <p className="text-sm  text-black">See reviews before you book any care givers</p>
+            <p className="text-sm  text-black">See reviews before you book any care givers.</p>
           </div>
         </div>
       </section>
