@@ -40,7 +40,7 @@ export default function App() {
 
     <div className="font-sans">
       {/* Header */}
-      <header className="bg-white shadow-md py-4 px-6">
+      <header className="bg-white shadow-md ">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           {/* <div className="flex items-center space-x+8">
             <img src={WelltogetherLogo} alt="WellTogether" className="w-30 h-30" />

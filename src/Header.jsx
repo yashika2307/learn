@@ -11,9 +11,9 @@ function Header() {
         {/* Logo & Title */}
         <div className="flex items-center space-x-3">
           <Link to="/">
-          <img src={WelltogetherLogo} alt="WellTogether" className="w-50 h-50 rounded-full" />
+          <img src={WelltogetherLogo} alt="WellTogether" className="w-60 h-40" />
       </Link>        
-          {/* <span className="text-xl font-bold text-black">WellTogether</span> */}
+          <span className="text-5xl font-bold text-black">WellTogether</span>
         </div>
 
         {/* Desktop Navigation */}
