@@ -8,7 +8,17 @@ import Support from './Support.jsx'
 import Register from './Register.jsx'
 import SignIn from './SignIn.jsx'
 import Header from './Header.jsx'
-
+import React from 'react'
+import ReactDOM from 'react-dom'
+// import Router from 'react-router'
+// import routes from './routes'
+import TagManager from 'react-gtm-module'
+ 
+const tagManagerArgs = {
+    gtmId: 'G-ZDC6DH2D9J'
+}
+ 
+TagManager.initialize(tagManagerArgs)
 
 
 createRoot(document.getElementById('root')).render(

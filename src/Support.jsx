@@ -17,10 +17,10 @@ export default function ContactUsPage() {
           <p>
             📧 Email:{" "}
             <a
-              href="mailto:contactus@welltogether.in"
+              href="mailto:welltogetherin@gmail.com"
               className="text-blue-700 underline hover:font-bold"
             >
-              contactus@welltogether.in
+              welltogetherin@gmail.com
             </a>
           </p>
 
