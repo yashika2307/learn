@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import WelltogetherLogo from './assets/welltogether_logo.jpg';
-
+import "./Header.css"
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -13,7 +13,7 @@ function Header() {
           <Link to="/">
           <img src={WelltogetherLogo} alt="WellTogether" className="w-60 h-40" />
       </Link>        
-          <span className="text-5xl font-bold text-black">WellTogether</span>
+          <span className="text-lg font-bold text-black md:text-2xl lg:text-3xl">WellTogether</span>
         </div>
 
         {/* Desktop Navigation */}
@@ -28,7 +28,7 @@ function Header() {
 
         {/* Mobile Menu Toggle Button */}
         <div className="md:hidden">
-          <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-black focus:outline-none">
+          <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-black focus:outline-none" style={{padding:"10px"}}>
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               {isMenuOpen ? (
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />

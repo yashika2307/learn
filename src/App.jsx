@@ -114,7 +114,7 @@ export default function App() {
       <section className="bg-[#f8f8fa] py-12 px-6 text-center">
         <h2 className="text-2xl font-semibold mb-2  text-black">Join the Community!</h2>
         <p className="mb-4 text-lg font-medium text-black">If you want to help your community<br />Earn upto 40,000 per month!</p>
-        <button className="bg-gradient-to-b from-blue-200 to-blue-600 text-black px-4 py-6 dark:from-blue-500 dark:to-blue-800 hover:from-blue-700 hover:to-blue-300  transition duration-300">Become a Care Giver</button>
+        <button className="bg-gradient-to-b from-blue-200 to-blue-600 px-4 py-6 dark:from-blue-500 dark:to-blue-800 hover:from-blue-700 hover:to-blue-300  transition duration-300">Become a Care Giver</button>
       </section>
 
       {/* Section 4 - Why Us */}

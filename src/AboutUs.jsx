@@ -6,8 +6,8 @@ export default function AboutUs() {
   return (
     <>
     {/* <Header /> */}
-    <div className="font-sans bg-white text-gray-800 py-10 px-6">
-      <div className="max-w-100% mx-auto bg-[#f5f5f5]">
+    <div className="font-sans bg-white text-gray-800">
+      <div className="max-w-100% mx-auto bg-[#f5f5f5] p-10">
         {/* Title */}
         <h1 className="text-4xl font-bold text-center text-blue-900 mb-6 ">
           About Us

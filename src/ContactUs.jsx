@@ -9,20 +9,22 @@ export default function ContactUsPage() {
   return (
     <>
     {/* <Header /> */}
-    <div className="min-h-screen min-w-screen flex items-center justify-center bg-white mx-auto ">
-      <div className="bg-white rounded-lg shadow-lg p-8 max-w-100% w-100% text-left border border-gray-200">
+    <div className="min-w-screen flex items-center justify-center bg-white mx-auto self-center">
+      <div className="contact-us-card bg-white rounded-lg shadow-lg p-8 max-w-100% w-100% text-left border border-gray-200">
         <h1 className="text-3xl font-bold mb-6 text-[#1e3a8a]">Contact Us</h1>
 
-        <div className="space-y-6 text-lg text-gray-700">
+        <div className="text-lg text-gray-700">
+          <div>
           <p>
             📧 Email:{" "}
-            <a
+            <a 
               href="mailto:welltogetherin@gmail.com"
-              className="text-blue-700 underline hover:font-bold"
+              className="text-blue-700 underline hover:font-bold inline-block min-w-[230]"
             >
               welltogetherin@gmail.com
             </a>
           </p>
+          </div>
 
           {/* <p>
             📞 Phone:{" "}
@@ -33,14 +35,18 @@ export default function ContactUsPage() {
               99999999
             </a>
           </p> */}
-
+  <div className="mt-20 ">
           <p>
             💬 WhatsApp:{" "}
-            <a
+            
+            <button
+            className="bg-gradient-to-b from-blue-200 to-blue-600 text-white p-4 dark:from-blue-500 dark:to-blue-800 hover:from-blue-700 hover:to-blue-300  transition duration-300"
+            ><a
               href={whatsappURL}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-gradient-to-b from-blue-200 to-blue-600 text-black px-4 py-6 dark:from-blue-500 dark:to-blue-800 hover:from-blue-700 hover:to-blue-300  transition duration-300"
+             style={{fontColor:"#ffffff"}}
+              
             >
               {/* <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -54,7 +60,9 @@ export default function ContactUsPage() {
               </svg> */}
               Chat Now
             </a>
+            </button>
           </p>
+          </div>
         </div>
       </div>
     </div>

@@ -4,12 +4,13 @@ import './index.css'
 import App from './App.jsx'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import AboutUs from './AboutUs.jsx'
-import Support from './Support.jsx'
+import Support from './ContactUs.jsx'
 import Register from './Register.jsx'
 import SignIn from './SignIn.jsx'
 import Header from './Header.jsx'
 import React from 'react'
 import ReactDOM from 'react-dom'
+import Layout from './Layout.jsx' 
 // import Router from 'react-router'
 // import routes from './routes'
 import TagManager from 'react-gtm-module'
@@ -29,16 +30,16 @@ createRoot(document.getElementById('root')).render(
 
 function Main() {
   return (
-    <Router>
-      <Header></Header>
-      <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/AboutUs" element={<AboutUs />} />
-        <Route path="/Support" element={<Support />} />
-        <Route path="/Register" element={<Register />} />
-        <Route path="/SignIn" element={<SignIn />} />
-        {/* Add other pages here */}
-      </Routes>
+<Router>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<App />} />
+          <Route path="/AboutUs" element={<AboutUs />} />
+          <Route path="/Support" element={<Support />} />
+          <Route path="/Register" element={<Register />} />
+          <Route path="/SignIn" element={<SignIn />} />
+        </Routes>
+      </Layout>
     </Router>
   );
 }
