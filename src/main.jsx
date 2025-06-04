@@ -11,6 +11,7 @@ import Header from './Header.jsx'
 import React from 'react'
 import ReactDOM from 'react-dom'
 import Layout from './Layout.jsx' 
+import "./App.css"
 // import Router from 'react-router'
 // import routes from './routes'
 import TagManager from 'react-gtm-module'

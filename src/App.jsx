@@ -1,14 +1,9 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './TempApp.css'
 import React from "react";
 import 'tailwindcss';
-import { Link } from 'react-router-dom';
 import ParentsVisit from './assets/parents-visit.png';
 import KidCare from './assets/kid-care.jpg';
 import SpeakToParents from './assets/speak-to-parents.jpg';
-import WelltogetherLogo from './assets/welltogether_logo.jpg';
 import HomePage from './assets/HomePage.png';
 
 
@@ -20,55 +15,27 @@ const services = [
     image: ParentsVisit
   },
   {
-    title: "Look after my Kid",
-    description: "Care provider will take care of your kid at your place.",
-    image: KidCare
-  },
-  {
     title: "Spend time with parents",
     description: "Conversations are the best medicines! We believe that, care giver will speak to them.",
     image: SpeakToParents
-  }
+  },
+  {
+    title: "Look after my Kid",
+    description: "Care provider will take care of your kid at your place.",
+    image: KidCare,
+    comingSoon:true
+  },
 ];
-
-// import exampleImage from "../assets/example.png";
-
-// <img src={exampleImage} alt="Example" />;
 
 export default function App() {
   return (
 
     <div className="font-sans">
-      {/* Header */}
-      <header className="bg-white shadow-md ">
-        <div className="max-w-7xl mx-auto flex justify-between items-center">
-          {/* <div className="flex items-center space-x+8">
-            <img src={WelltogetherLogo} alt="WellTogether" className="w-30 h-30" />
-            <div className="text-2xl font-bold text-black">WellTogether</div>
-          </div>
-        <div className="max-w-7xl mx-auto flex justify-between items-center"> */}
-          
-          {/* {/* <nav className="space-x-4">
-            <a href="#" className="text-black hover:text-blue-900 hover:font-bold">Home</a>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeCWx4_C09BtXH-NO0K8HPaNAIT3OL2Cu4ZILtv__Dzz9lIyA/viewform?usp=header" className="text-black hover:text-blue-900 hover:font-bold">Find Care Provider</a>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScEzOmNCmQ6suHCxLOgznQ1ZrJFP-SuQAyWh2UVN4m7h8dQqA/viewform?usp=header" className="text-black hover:text-blue-900 hover:font-bold">Become a Care Provider</a>
-             <Link to="/AboutUs" className="text-black hover:text-blue-900 hover:font-bold">About Us</Link>
-            <Link to="/Support" className="text-black hover:text-blue-900 hover:font-bold">Contact Us</Link>
-           {/* <Link to="/Register" className="text-black hover:text-blue-900 hover:font-bold">Register</Link> */}
-           {/* <Link to="/Signin" className="text-black hover:text-blue-900 hover:font-bold">Sign In</Link> */}
-          
-
-          
-        {/* </div> */}
-        </div>
-      </header>
-
-    <div className="font-sans">
       {/* Section 1 - Hero */}
-      <section className="px-6 py-10 bg-[#f5f5f5]">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between">
+      <section className="px-6 py-10 bg-mywhite">
+        <div className="container-box mx-auto flex flex-col md:flex-row items-center justify-between">
           <div className="md:w-1/2 mb-6 md:mb-0">
-            <h1 className="text-4xl font-bold text-[#071a4d] mb-4">
+            <h1 className="text-4xl md:text-5xl  font-bold mb-4 text-blue">
               Bringing Generations <br />Together, With Care
             </h1>
             <h2 className="text-2xl text-[#071a4d] mb-4">
@@ -84,49 +51,57 @@ export default function App() {
           </div>
         </div>
       </section>
- </div>
+ 
       {/* Section 2 - Services */}
-      <section className="bg-[#d1e3f0] py-10">
-        <div className="text-center mb-8">
-          <h2 className="text-2xl font-semibold  text-black">Our Services</h2>
-        </div>
-        <div className="flex flex-col md:flex-row justify-center items-center gap-6 px-4">
+      <section className="bg-mygrey py-10">
+        <div className="text-center mb-8 container-box">
+          <h1 className="text-4xl font-semibold  text-black mb-8">Our Services</h1>
+        <div className="flex flex-col md:flex-row items-stretch justify-between">
           {services.map((service, index) => (
             <div
-              key={index}
-              className="bg-white rounded-lg shadow-md w-full max-w-sm overflow-hidden"
+            key={index}
+            className="relative bg-white rounded-lg shadow-md w-full max-w-sm overflow-hidden flex flex-col"
             >
               <img
                 src={service.image}
                 alt={service.title}
                 className="w-full h-48 object-cover"
-              />
-              <div className="p-4">
+                />
+              {service.comingSoon && (
+                <div className="absolute inset-0 bg-[#6a6161e3] flex items-center justify-center">
+                  <span className="text-white text-lg font-bold">Coming Soon</span>
+                </div>
+              )}
+              <div className="p-4 flex-grow flex flex-col justify-between">
                 <h3 className="text-lg font-bold mb-2 text-center">{service.title}</h3>
                 <p className="text-sm text-center text-gray-600">{service.description}</p>
               </div>
             </div>
           ))}
         </div>
+          </div>
       </section>
 
       {/* Section 3 - Join Community */}
-      <section className="bg-[#f8f8fa] py-12 px-6 text-center">
-        <h2 className="text-2xl font-semibold mb-2  text-black">Join the Community!</h2>
-        <p className="mb-4 text-lg font-medium text-black">If you want to help your community<br />Earn upto 40,000 per month!</p>
-        <button className="bg-gradient-to-b from-blue-200 to-blue-600 px-4 py-6 dark:from-blue-500 dark:to-blue-800 hover:from-blue-700 hover:to-blue-300  transition duration-300">Become a Care Giver</button>
+      <section className="bg-mywhite py-12 px-6 text-center">
+        <div className='container-box'>
+        <h1 className="text-4xl font-semibold my-5  text-black">Join the Community!</h1>
+        <p className="mb-4 text-lg font-medium text-black">If you want to help your community and<br />Earn upto 40,000 per month!</p>
+        <button className="action-button px-4 py-6 text-2xl">Become a Care Giver</button>
+        </div>
       </section>
 
       {/* Section 4 - Why Us */}
-      <section className="bg-[#d1e3f0] py-12 px-6">
-        <div className="text-center mb-8">
-          <h2 className="text-2xl font-semibold  text-black">Why Us?</h2>
-        </div>
+      <section className="bg-mygrey py-12 px-6">
+        <div className='container-box'>
+
+          <h2 className="text-4xl font-semibold  text-black text-center my-9">Why Us?</h2>
+
         <div className="grid grid-cols-1 md:grid-cols-5 gap-6 text-center">
           <div>
             <div className="text-blue-600 text-3xl mb-2">🔍</div>
             <p className="font-medium  text-black">Care givers at your place</p>
-            <p className="text-sm  text-black">Your place, your rules, our care givers. All facilities at the comfort of your home.</p>
+            <p className="text-sm  text-black">Your place, your rules, our care givers</p>
           </div>
           <div>
             <div className="text-blue-600 text-3xl mb-2">📅</div>
@@ -148,6 +123,7 @@ export default function App() {
             <p className="font-medium  text-black">Honest reviews</p>
             <p className="text-sm  text-black">See reviews before you book any care givers.</p>
           </div>
+        </div>
         </div>
       </section>
     </div>

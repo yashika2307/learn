@@ -1,161 +1,40 @@
 @import "tailwindcss";
+@theme {
+
+
+  --color-mywhite: #F1EFEC;
+  --color-mygrey: #d4c9be82;
+  --color-myblue:#123458;
+  --color-myblack: #030303;
+  --color-myorange: #DE7862;
+
+
+  --container-width-sm: 90%;
+  --container-width-md: 85%;
+  --container-width-lg: 80%;
+
+}
+
+
+.container-box {
+  width: var(--container-width-sm);
+  margin:auto;
+}
+@media (min-width: 800) { /* medium screens */
+  .container-box {
+    width: var(--container-width-md);
+  }
+}
+@media (min-width: 1024px) { /* Large screens */
+  .container-box {
+    width: var(--container-width-lg);
+  }
+}
+
 
 body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
-}
-
-.hero-section {
-  background-color: white;
-  padding: 100px 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.hero-container {
-  max-width: 1200px;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-
-.hero-text h1 {
-  color: #080220;
-  font-size: 36px;
-  font-weight: 700;
-}
-
-.hero-image img {
-  width: 10px;
-  height: 12px;
-}
-
-@media(min-width: 20px) {
-  .hero-container {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .hero-text, .hero-image {
-    width: 48%;
-  }
-}
-
-/* Services Section */
-.services-section {
-  background-color: #d1e3f0;
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.services-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 30px;
-}
-
-.service-card {
-  background: rgb(234, 157, 157);
-  border-radius: 10px;
-  max-width: 30px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-.service-card img {
-  width: 10%;
-  height: 20px;
-  object-fit: cover;
-}
-
-.service-card h3 {
-  font-size: 18px;
-  font-weight: 600;
-  margin-top: 10px;
-}
-
-.service-card p {
-  font-size: 14px;
-  color: #555;
-  padding: 0 10px 15px;
-}
-
-/* Join Community */
-.join-section {
-  background-color: white;
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.join-section h2 {
-  font-size: 24px;
-  font-weight: 600;
-}
-
-.join-section p {
-  font-size: 18px;
-  margin: 10px 0 20px;
-}
-
-.join-section button {
-  background-color: black;
-  color: rgba(17, 121, 119, 0.51);
-  padding: 10px 20px;
-  border: black;
-  border-radius: 16px;
-  cursor: pointer;
-}
-
-
-.join-section button:hover {
-  opacity: 0.9;
-}
-
-
-
-
-/* Why Us */
-.why-section {
-  background-color: #020f1c;
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.why-section h2 {
-  font-size: 24px;
-  font-weight: 600;
-  margin-bottom: 30px;
-}
-
-.why-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 30px;
-}
-
-@media(min-width: 768px) {
-  .why-grid {
-    grid-template-columns: repeat(5, 1fr);
-  }
-}
-
-.why-item {
-  text-align: center;
-}
-
-.why-item .icon {
-  font-size: 30px;
-  color: #1e3a8a;
-  margin-bottom: 10px;
-}
-
-.why-item p {
-  margin: 5px 0;
-  font-size: 14px;
 }
 
