@@ -32,14 +32,14 @@ export default function App() {
 
     <div className="font-sans">
       {/* Section 1 - Hero */}
-      <section className="px-6 py-10 bg-mywhite">
+      <section className="px-6 py-10 bg-[#FDFAF5]">
         <div className="container-box mx-auto flex flex-col md:flex-row items-center justify-between">
           <div className="md:w-1/2 mb-6 md:mb-0">
             <h1 className="text-4xl md:text-5xl  font-bold mb-4 text-blue">
-              Bringing Generations <br />Together, With Care
+              Bringing Generations Together, With Care
             </h1>
             <h2 className="text-2xl text-[#071a4d] mb-4">
-              Connecting elderly and parents with <br /> college students providing care and <br /> companionship.
+              Connecting elderly and parents with college students providing care and companionship.
             </h2>
           </div>
           <div className="md:w-1/2">
@@ -56,7 +56,7 @@ export default function App() {
       <section className="bg-mygrey py-10">
         <div className="text-center mb-8 container-box">
           <h1 className="text-4xl font-semibold  text-black mb-8">Our Services</h1>
-        <div className="flex flex-col md:flex-row items-stretch justify-between">
+        <div className="flex flex-col md:flex-row items-stretch justify-between gap-6">
           {services.map((service, index) => (
             <div
             key={index}
@@ -81,18 +81,8 @@ export default function App() {
         </div>
           </div>
       </section>
-
-      {/* Section 3 - Join Community */}
-      <section className="bg-mywhite py-12 px-6 text-center">
-        <div className='container-box'>
-        <h1 className="text-4xl font-semibold my-5  text-black">Join the Community!</h1>
-        <p className="mb-4 text-lg font-medium text-black">If you want to help your community and<br />Earn upto 40,000 per month!</p>
-        <button className="action-button px-4 py-6 text-2xl">Become a Care Giver</button>
-        </div>
-      </section>
-
-      {/* Section 4 - Why Us */}
-      <section className="bg-mygrey py-12 px-6">
+{/* Section 3 - Why Us */}
+      <section className="bg-mywhite py-12 px-6">
         <div className='container-box'>
 
           <h2 className="text-4xl font-semibold  text-black text-center my-9">Why Us?</h2>
@@ -126,6 +116,19 @@ export default function App() {
         </div>
         </div>
       </section>
+
+      {/* Section 4 - Join Community */}
+      <section className="bg-mygrey py-12 px-6 text-center">
+        <div className='container-box'>
+        <h1 className="text-4xl font-semibold my-5  text-black">Join the Community!</h1>
+        <p className="mb-4 text-lg font-medium text-black">Grab a chance to give back to your community and<br />Earn upto 16,000 per month!</p>
+        <button className="action-button px-4 py-6 text-2xl "> <a href="https://docs.google.com/forms/d/e/1FAIpQLScEzOmNCmQ6suHCxLOgznQ1ZrJFP-SuQAyWh2UVN4m7h8dQqA/viewform?usp=header" > Become a Care Giver  </a>  </button>
+      
+    
+        </div>
+      </section>
+
+      
     </div>
   );
 }

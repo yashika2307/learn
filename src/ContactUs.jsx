@@ -2,7 +2,7 @@ import React from "react";
 import Header from './Header';
 
 export default function ContactUsPage() {
-  const whatsappNumber = "8177950736"; // Replace with actual number
+  const whatsappNumber = "7756900769"; // Replace with actual number
   const whatsappMessage = "Hi, I'm interested in learning more about your care services!";
   const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 

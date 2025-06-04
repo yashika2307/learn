@@ -11,7 +11,7 @@ function Header() {
         {/* Logo & Title */}
         <div className="flex items-center space-x-3">
           <Link to="/">
-          <img src={WelltogetherLogo} alt="WellTogether" className="w-60 h-40" />
+          <img src={WelltogetherLogo} alt="WellTogether" className="w-20 h-auto" />
       </Link>        
           <span className="text-lg font-bold text-black md:text-2xl lg:text-3xl">WellTogether</span>
         </div>
@@ -21,7 +21,7 @@ function Header() {
 
            <Link to="/" className="text-black hover:text-blue-900 hover:font-bold">Home</Link>
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSeCWx4_C09BtXH-NO0K8HPaNAIT3OL2Cu4ZILtv__Dzz9lIyA/viewform?usp=header" className="text-black hover:text-blue-900 hover:font-bold">Find Care Provider</a>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLScEzOmNCmQ6suHCxLOgznQ1ZrJFP-SuQAyWh2UVN4m7h8dQqA/viewform?usp=header" className="text-black hover:text-blue-900 hover:font-bold">Become a Care Provider</a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScEzOmNCmQ6suHCxLOgznQ1ZrJFP-SuQAyWh2UVN4m7h8dQqA/viewform?usp=header" className="text-black hover:text-blue-900 hover:font-bold">Become a Care Giver</a>
           <Link to="/AboutUs" className="text-black hover:text-blue-900 hover:font-bold">About Us</Link>
           <Link to="/Support" className="text-black hover:text-blue-900 hover:font-bold">Contact Us</Link>
         </nav>

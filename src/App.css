@@ -2,13 +2,13 @@
 @theme {
 
 
-  --color-mywhite: #F1EFEC;
-  --color-mygrey: #d4c9be82;
+  --color-mywhite: #FDFAF5;
+  --color-mygrey: #f5f5f5;
   --color-myblue:#123458;
   --color-myblack: #030303;
   --color-myorange: #DE7862;
-
-
+/* bg-[#FDFAF5]
+//#F1EFEC */
   --container-width-sm: 90%;
   --container-width-md: 85%;
   --container-width-lg: 80%;
