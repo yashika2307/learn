@@ -20,7 +20,7 @@ function Header() {
         <nav className="hidden md:flex space-x-4">
 
            <Link to="/" className="text-black hover:text-blue-900 hover:font-bold">Home</Link>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeCWx4_C09BtXH-NO0K8HPaNAIT3OL2Cu4ZILtv__Dzz9lIyA/viewform?usp=header" className="text-black hover:text-blue-900 hover:font-bold">Find Care Provider</a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeCWx4_C09BtXH-NO0K8HPaNAIT3OL2Cu4ZILtv__Dzz9lIyA/viewform?usp=header" className="text-black hover:text-blue-900 hover:font-bold">Find Care Giver</a>
           <a href="https://docs.google.com/forms/d/e/1FAIpQLScEzOmNCmQ6suHCxLOgznQ1ZrJFP-SuQAyWh2UVN4m7h8dQqA/viewform?usp=header" className="text-black hover:text-blue-900 hover:font-bold">Become a Care Giver</a>
           <Link to="/AboutUs" className="text-black hover:text-blue-900 hover:font-bold">About Us</Link>
           <Link to="/Support" className="text-black hover:text-blue-900 hover:font-bold">Contact Us</Link>
@@ -43,7 +43,7 @@ function Header() {
       {/* Mobile Navigation */}
       {isMenuOpen && (
         <div className="md:hidden px-4 pt-2 pb-4 space-y-2">
-          <a href="#" className="block text-black hover:text-blue-900 hover:font-bold">Home</a>
+          <a href="#" className="block text-black hover:text-black hover:font-bold">Home</a>
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSeCWx4_C09BtXH-NO0K8HPaNAIT3OL2Cu4ZILtv__Dzz9lIyA/viewform?usp=header" className="block text-black hover:text-blue-900 hover:font-bold">Find Care Giver</a>
           <a href="https://docs.google.com/forms/d/e/1FAIpQLScEzOmNCmQ6suHCxLOgznQ1ZrJFP-SuQAyWh2UVN4m7h8dQqA/viewform?usp=header" className="block text-black hover:text-blue-900 hover:font-bold">Become a Care Giver</a>
           <Link to="/AboutUs" className="block text-black hover:text-blue-900 hover:font-bold">About Us</Link>
