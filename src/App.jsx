@@ -5,6 +5,7 @@ import ParentsVisit from './assets/parents-visit.png';
 import KidCare from './assets/kid-care.jpg';
 import SpeakToParents from './assets/speak-to-parents.jpg';
 import HomePage from './assets/HomePage.png';
+import JoinComm from './assets/JoinComm.mp4';
 
 
 
@@ -119,10 +120,17 @@ export default function App() {
 
       {/* Section 4 - Join Community */}
       <section className="bg-mygrey py-12 px-6 text-center">
-        <div className='container-box'>
-        <h1 className="text-4xl font-semibold my-5  text-black">Join the Community!</h1>
-        <p className="mb-4 text-lg font-medium text-black">Grab a chance to give back to your community and<br />Earn upto 16,000 per month!</p>
-        <button className="action-button px-4 py-6 text-2xl "> <a href="https://docs.google.com/forms/d/e/1FAIpQLScEzOmNCmQ6suHCxLOgznQ1ZrJFP-SuQAyWh2UVN4m7h8dQqA/viewform?usp=header" > Become a Care Giver  </a>  </button>
+        
+        <div >
+         <div className="video-container">
+          <video width="100%" height="65%" autoPlay loop muted playsInline className="">
+  <source src={JoinComm} type="video/mp4"></source>
+  Your browser does not support the video tag.
+</video>
+</div>
+        {/* <h1 className="text-4xl font-semibold my-5  text-black">Join the Community!</h1>
+        <p className="mb-4 text-lg font-medium text-black">Grab a chance to give back to your community and<br />Earn upto 16,000 per month!</p> */}
+        <br></br><button className="action-button px-4 py-6 text-2xl "> <a href="https://docs.google.com/forms/d/e/1FAIpQLScEzOmNCmQ6suHCxLOgznQ1ZrJFP-SuQAyWh2UVN4m7h8dQqA/viewform?usp=header" > Become a Care Giver  </a>  </button>
         </div>
       </section>
 
@@ -130,3 +138,14 @@ export default function App() {
     </div>
   );
 }
+
+// <div className="video-container">
+//       <video autoPlay loop muted playsInline className="background-video">
+//         <source src="/path-to-your-video.mp4" type="video/mp4" />
+//         Your browser does not support the video tag.
+//       </video>
+//       <div className="content">
+//         <h1>Welcome to My Site</h1>
+//         <p>This is some content over the video background.</p>
+//       </div>
+//     </div>

@@ -1,18 +1,14 @@
 @import "tailwindcss";
 @theme {
-
-
   --color-mywhite: #FDFAF5;
   --color-mygrey: #f5f5f5;
   --color-myblue:#123458;
   --color-myblack: #030303;
   --color-myorange: #DE7862;
-/* bg-[#FDFAF5]
-//#F1EFEC */
+
   --container-width-sm: 90%;
   --container-width-md: 85%;
   --container-width-lg: 80%;
-
 }
 
 
@@ -37,4 +33,22 @@ body {
   margin: 0;
   padding: 0;
 }
+.video-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
 
+.background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
