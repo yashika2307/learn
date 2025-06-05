@@ -2,7 +2,7 @@
 @theme {
   --color-mywhite: #FDFAF5;
   --color-mygrey: #f5f5f5;
-  --color-myblue:#123458;
+  --color-myblue:#071a4d;
   --color-myblack: #030303;
   --color-myorange: #DE7862;
 
@@ -35,7 +35,7 @@ body {
 }
 .video-container {
   position: relative;
-  width: 100%;
+  /* width: 100%; */
   height: auto;
   overflow: hidden;
 }

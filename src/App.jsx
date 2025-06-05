@@ -12,7 +12,7 @@ import JoinComm from './assets/JoinComm.mp4';
 const services = [
   {
     title: "Take my Parents for Visit",
-    description: "Care taker can take your parents to hospital or anywhere else.",
+    description: "Care giver can take your parents to hospital or anywhere else. Services starting INR 100 only",
     image: ParentsVisit
   },
   {
@@ -39,7 +39,7 @@ export default function App() {
             <h1 className="text-4xl md:text-5xl  font-bold mb-4 text-blue">
               Bringing Generations Together, With Care
             </h1>
-            <h2 className="text-2xl text-[#071a4d] mb-4">
+            <h2 className="text-2xl text-myblue mb-4">
               Connecting elderly and parents with college students providing care and companionship.
             </h2>
           </div>
@@ -123,14 +123,15 @@ export default function App() {
         
         <div >
          <div className="video-container">
-          <video width="100%" height="65%" autoPlay loop muted playsInline className="">
+          <video width="100%" height="25%" autoPlay loop muted playsInline className="">
   <source src={JoinComm} type="video/mp4"></source>
   Your browser does not support the video tag.
 </video>
 </div>
         {/* <h1 className="text-4xl font-semibold my-5  text-black">Join the Community!</h1>
         <p className="mb-4 text-lg font-medium text-black">Grab a chance to give back to your community and<br />Earn upto 16,000 per month!</p> */}
-        <br></br><button className="action-button px-4 py-6 text-2xl "> <a href="https://docs.google.com/forms/d/e/1FAIpQLScEzOmNCmQ6suHCxLOgznQ1ZrJFP-SuQAyWh2UVN4m7h8dQqA/viewform?usp=header" > Become a Care Giver  </a>  </button>
+        
+        <button className="action-button px-4 py-6 text-1xl md:text-4xl my-6"> <a href="https://docs.google.com/forms/d/e/1FAIpQLScEzOmNCmQ6suHCxLOgznQ1ZrJFP-SuQAyWh2UVN4m7h8dQqA/viewform?usp=header" > Become a Care Giver  </a>  </button>
         </div>
       </section>
 
