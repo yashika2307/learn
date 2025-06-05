@@ -96,17 +96,17 @@ export default function App() {
           <div>
             <div className="text-blue-600 text-3xl mb-2">📅</div>
             <p className="font-medium  text-black">No commitments</p>
-            <p className="text-sm  text-black">Book for as many hours as you want. No min hrs required.</p>
+            <p className="text-sm  text-black">Book for assistance as you want. No min hrs required.</p>
           </div>
           <div>
             <div className="text-blue-600 text-3xl mb-2">🎓</div>
             <p className="font-medium  text-black">Educated care givers</p>
-            <p className="text-sm  text-black">Our care givers are well educated.</p>
+            <p className="text-sm  text-black">Our care givers are well educated and understand family values just as you do.</p>
           </div>
           <div>
             <div className="text-blue-600 text-3xl mb-2">🛡️</div>
             <p className="font-medium  text-black">Verified Backgrounds</p>
-            <p className="text-sm  text-black">Expert legal advice to ease documentation process.</p>
+            <p className="text-sm  text-black">Verified care givers to ensure your safety.</p>
           </div>
           <div>
             <div className="text-blue-600 text-3xl mb-2">👁️</div>
@@ -123,8 +123,6 @@ export default function App() {
         <h1 className="text-4xl font-semibold my-5  text-black">Join the Community!</h1>
         <p className="mb-4 text-lg font-medium text-black">Grab a chance to give back to your community and<br />Earn upto 16,000 per month!</p>
         <button className="action-button px-4 py-6 text-2xl "> <a href="https://docs.google.com/forms/d/e/1FAIpQLScEzOmNCmQ6suHCxLOgznQ1ZrJFP-SuQAyWh2UVN4m7h8dQqA/viewform?usp=header" > Become a Care Giver  </a>  </button>
-      
-    
         </div>
       </section>
 
