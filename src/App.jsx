@@ -16,12 +16,12 @@ const services = [
     image: ParentsVisit
   },
   {
-    title: "Spend time with parents",
+    title: "Spend Time with Parents",
     description: "Conversations are the best medicines! We believe that, care giver will speak to them.",
     image: SpeakToParents
   },
   {
-    title: "Look after my Kid",
+    title: "Infant Care",
     description: "Care provider will take care of your kid at your place.",
     image: KidCare,
     comingSoon:true
