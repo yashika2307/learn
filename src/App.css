@@ -16,6 +16,9 @@
   width: var(--container-width-sm);
   margin:auto;
 }
+.container-height{
+  height: 20vh;
+}
 @media (min-width: 800) { /* medium screens */
   .container-box {
     width: var(--container-width-md);

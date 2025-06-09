@@ -12,12 +12,12 @@ import JoinComm from './assets/JoinComm.mp4';
 const services = [
   {
     title: "Take my Parents for Visit",
-    description: "Care giver can take your parents to hospital or anywhere else. Services starting INR 100 only",
+    description: "Our MannMitra Interns can take parents to Social visits or hospitals or anywhere they like.",
     image: ParentsVisit
   },
   {
-    title: "Spend Time with Parents",
-    description: "Conversations are the best medicines! We believe that, care giver will speak to them.",
+    title: "Companionship",
+    description: "Be it conversations or doing an activity together, our MannMitra Interns have got you covered. From chatting to playing 3Patti, we are your best Companions.",
     image: SpeakToParents
   },
   {
@@ -35,15 +35,15 @@ export default function App() {
       {/* Section 1 - Hero */}
       <section className="px-6 py-10 bg-[#FDFAF5]">
         <div className="container-box mx-auto flex flex-col md:flex-row items-center justify-between">
-          <div className="md:w-1/2 mb-6 md:mb-0">
+          {/* <div className="md:w-1/2 mb-6 md:mb-0">
             <h1 className="text-4xl md:text-5xl  font-bold mb-4 text-blue">
               Bringing Generations Together, With Care
             </h1>
             <h2 className="text-2xl text-myblue mb-4">
               Connecting elderly and parents with college students providing care and companionship.
             </h2>
-          </div>
-          <div className="md:w-1/2">
+          </div> */}
+          <div className="md:w-full">
             <img
               src={HomePage}
               alt="Family Care"
@@ -91,27 +91,27 @@ export default function App() {
         <div className="grid grid-cols-1 md:grid-cols-5 gap-6 text-center">
           <div>
             <div className="text-blue-600 text-3xl mb-2">🔍</div>
-            <p className="font-medium  text-black">Care givers at your place</p>
+            <p className="font-medium  text-black">Care Givers at Your Place</p>
             <p className="text-sm  text-black">Your place, your rules, our care givers</p>
           </div>
           <div>
             <div className="text-blue-600 text-3xl mb-2">📅</div>
-            <p className="font-medium  text-black">No commitments</p>
-            <p className="text-sm  text-black">Book for assistance as you want. No min hrs required.</p>
+            <p className="font-medium  text-black">No Commitments</p>
+            <p className="text-sm  text-black">Book for assistance when you want. No Monthly commitments, No min hrs required.</p>
           </div>
           <div>
             <div className="text-blue-600 text-3xl mb-2">🎓</div>
-            <p className="font-medium  text-black">Educated care givers</p>
-            <p className="text-sm  text-black">Our care givers are well educated and understand family values just as you do.</p>
+            <p className="font-medium  text-black">Educated Care Givers</p>
+            <p className="text-sm  text-black">Our care givers understand family values just as you do.</p>
           </div>
           <div>
             <div className="text-blue-600 text-3xl mb-2">🛡️</div>
-            <p className="font-medium  text-black">Verified Backgrounds</p>
-            <p className="text-sm  text-black">Verified care givers to ensure your safety.</p>
+            <p className="font-medium  text-black">Multi-Layered Checks</p>
+            <p className="text-sm  text-black">To ensure your safety, we do digital, physical and social background verification for all our users.</p>
           </div>
           <div>
             <div className="text-blue-600 text-3xl mb-2">👁️</div>
-            <p className="font-medium  text-black">Honest reviews</p>
+            <p className="font-medium  text-black">Honest Reviews</p>
             <p className="text-sm  text-black">See reviews before you book any care givers.</p>
           </div>
         </div>
