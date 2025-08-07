@@ -1,9 +1,9 @@
 import './TempApp.css'
 import React from "react";
 import 'tailwindcss';
-import ParentsVisit from './assets/parents-visit.png';
-import KidCare from './assets/kid-care.jpg';
-import SpeakToParents from './assets/speak-to-parents.jpg';
+import ParentsVisit from './assets/CallSubscription.jpg';
+import KidCare from './assets/Ambulance.png';
+import SpeakToParents from './assets/parents-visit.png';
 import HomePage from './assets/HomePage.png';
 import JoinComm from './assets/JoinComm.mp4';
 
@@ -11,20 +11,25 @@ import JoinComm from './assets/JoinComm.mp4';
 
 const services = [
   {
-    title: "Take my Parents for Visit",
-    description: "Our MannMitra Interns can take parents to Social visits or hospitals or anywhere they like.",
+    title: "Call Subscription",
+    description:  <>
+        Unlimited calls. Unlimited care.
+        <br /><br />
+        Sometimes, all they need is someone to talk to. Hamare trained caregivers and listeners are just a call away — every day, anytime.
+      </>,
     image: ParentsVisit
   },
   {
-    title: "Companionship",
-    description: "Be it conversations or doing an activity together, our MannMitra Interns have got you covered. From chatting to playing 3Patti, we are your best Companions.",
+    title: "At Home Visit",
+    description: 
+    <>Companionship | Assisted Walks | Social Visits <br /><br />Elderly parents often feel lonely. Our companions bring conversations, care, and confidence — jaise aap unke paas ho.</>,
     image: SpeakToParents
   },
   {
-    title: "Infant Care",
-    description: "Care provider will take care of your kid at your place.",
+    title: "Emergency Subscription",
+    description: <>Kabhi kabhi zarurat turant hoti hai. <br /><br /> Whether it's a fall, sudden illness, or unexpected situation — ambulance aur caretaker ek call door. Even if you’re far away, we’re always close.</>,
     image: KidCare,
-    comingSoon:true
+    comingSoon:false
   },
 ];
 
@@ -83,7 +88,7 @@ export default function App() {
           </div>
       </section>
 {/* Section 3 - Why Us */}
-      <section className="bg-mywhite py-12 px-6">
+      {/* <section className="bg-mywhite py-12 px-6">
         <div className='container-box'>
 
           <h2 className="text-4xl font-semibold  text-black text-center my-9">Why Us?</h2>
@@ -91,49 +96,129 @@ export default function App() {
         <div className="grid grid-cols-1 md:grid-cols-5 gap-6 text-center">
           <div>
             <div className="text-blue-600 text-3xl mb-2">🔍</div>
-            <p className="font-medium  text-black">Care Givers at Your Place</p>
-            <p className="text-sm  text-black">Your place, your rules, our care givers</p>
+            <p className="font-medium  text-black">Security</p>
+            <p className="text-sm  text-black">Triple Layer Security <br/>Police Verification <br/>Physical Home Verification<br/>Social Media Background Check <br/>
+</p>
           </div>
           <div>
             <div className="text-blue-600 text-3xl mb-2">📅</div>
             <p className="font-medium  text-black">No Commitments</p>
-            <p className="text-sm  text-black">Book for assistance when you want. No Monthly commitments, No min hrs required.</p>
+            <p className="text-sm  text-black">Koi monthly charge nahi, koi unnecessary package nahi. Bas zarurat padne par caregiver bulaiye. As simple as that.</p>
+          </div>
+          <div>
+            <div className="text-blue-600 text-3xl mb-2">📅</div>
+            <p className="font-medium  text-black">At Home Service</p>
+            <p className="text-sm  text-black">Get service at the comfort of your Home</p>
           </div>
           <div>
             <div className="text-blue-600 text-3xl mb-2">🎓</div>
             <p className="font-medium  text-black">Educated Care Givers</p>
-            <p className="text-sm  text-black">Our care givers understand family values just as you do.</p>
+            <p className="text-sm  text-black"><>Because care requires understanding. <br />Our caregivers are not just trained — they’re educated, empathetic, and truly connected to your needs.</></p>
           </div>
           <div>
             <div className="text-blue-600 text-3xl mb-2">🛡️</div>
-            <p className="font-medium  text-black">Multi-Layered Checks</p>
-            <p className="text-sm  text-black">To ensure your safety, we do digital, physical and social background verification for all our users.</p>
+            <p className="font-medium  text-black">On Time Emergency assistance</p>
+            <p className="text-sm  text-black">Because care requires understanding. <br />Our caregivers are not just trained — they’re educated, empathetic, and truly connected to your needs."</p>
           </div>
           <div>
             <div className="text-blue-600 text-3xl mb-2">👁️</div>
             <p className="font-medium  text-black">Honest Reviews</p>
-            <p className="text-sm  text-black">See reviews before you book any care givers.</p>
+            <p className="text-sm  text-black">Caregiver choose karne ka right aapka hai. <br />Har service ke baad feedback liya jata hai — aapke experience se hi hum behtar hote hain.</p>
           </div>
         </div>
         </div>
-      </section>
+      </section> */}
+
+      <section class="bg-[#fdf8f3] py-16 px-4">
+  <div class="max-w-7xl mx-auto text-center">
+    <h2 class="text-4xl font-bold text-gray-900 mb-12">Why Us?</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      {/* <!-- Card 1 --> */}
+      <div class="bg-white rounded-[2rem] w-80 h-60 shadow-md p-6 text-center">
+        <div class="mx-auto mb-4 w-16 h-16 rounded-full bg-[#edc6aa] border border-black-500"></div>
+        <h3 class="text-xl font-semibold mb-2 border-b pb-2">Triple Layer Security</h3>
+        <p class="text-gray-600 text-sm leading-relaxed">
+          Police Verification<br />
+          Physical Home Verification<br />
+          Social Media Background Check
+        </p>
+      </div>
+
+      {/* <!-- Card 2 --> */}
+      <div class="bg-white rounded-[2rem] w-80 h-60 shadow-md p-6 text-center">
+        <div class="mx-auto mb-4 w-16 h-16 rounded-full bg-[#edc6aa] border border-black-500"></div>
+        <h3 class="text-xl font-semibold mb-2 border-b pb-2">No Commitments</h3>
+        <p class="text-gray-600 text-sm leading-relaxed">
+          Koi monthly charge nahi,<br />
+          koi unnecessary package nahi.<br />
+          Bas zarurat padne par caregiver bulaiye.
+        </p>
+      </div>
+
+      {/* <!-- Card 3 --> */}
+      <div class="bg-white rounded-[2rem] w-80 h-60 shadow-md p-6 text-center">
+        <div class="mx-auto mb-4 w-16 h-16 rounded-full bg-[#edc6aa] border border-black-500"></div>
+        <h3 class="text-xl font-semibold mb-2 border-b pb-2">At Home Services</h3>
+        <p class="text-gray-600 text-sm leading-relaxed">
+          Ghar vahi, Jaha Suvidha Sabhi<br />
+          Get service at the comfort of your Home.
+        </p>
+      </div>
+
+      {/* <!-- Card 4 --> */}
+      <div class="bg-white rounded-[2rem] w-80 h-60 shadow-md p-6 text-center">
+        <div class="mx-auto mb-4 w-16 h-16 rounded-full bg-[#edc6aa] border border-black-500"></div>
+        <h3 class="text-xl font-semibold mb-2 border-b pb-2">Educated Care Givers</h3>
+        <p class="text-gray-600 text-sm leading-relaxed">
+          Because care requires understanding.<br />
+          Our caregivers are not just trained,<br />
+          they’re educated, empathetic & truly connected to your needs.
+        </p>
+      </div>
+
+      {/* <!-- Card 5 --> */}
+      <div class="bg-white rounded-[2rem] w-80 h-60 shadow-md p-6 text-center">
+        <div class="mx-auto mb-4 w-16 h-16 rounded-full bg-[#edc6aa] border border-black-500"></div>
+        <h3 class="text-xl font-semibold mb-2 border-b pb-2">Emergency Assistance</h3>
+        <p class="text-gray-600 text-sm leading-relaxed">
+          No more dependency in emergency.<br />
+          Ambulance and caretaker<br />
+          just a call away
+        </p>
+      </div>
+
+      {/* <!-- Card 6 --> */}
+      <div class="bg-white rounded-[2rem] w-80 h-60 shadow-md p-6 text-center">
+        <div class="mx-auto mb-4 w-16 h-16 rounded-full bg-[#edc6aa] border border-black-500"></div>
+        <h3 class="text-xl font-semibold mb-2 border-b pb-2">Honest Reviews</h3>
+        <p class="text-gray-600 text-sm leading-relaxed">
+          Caregiver choose karne ka right aapka hai.
+          Har service ke baad feedback paiye,<br />
+          aapke experience se hi hum behtar hote hain.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Section 4 - Join Community */}
-      <section className="bg-mygrey py-12 px-6 text-center">
+<section className="bg-mygrey py-12 px-6 text-center">
         
-        <div >
+         <div >
          <div className="video-container">
           <video width="100%" height="25%" autoPlay loop muted playsInline className="">
-  <source src={JoinComm} type="video/mp4"></source>
+  <source src={JoinComm} type=""></source>
   Your browser does not support the video tag.
-</video>
+</video> 
 </div>
         {/* <h1 className="text-4xl font-semibold my-5  text-black">Join the Community!</h1>
         <p className="mb-4 text-lg font-medium text-black">Grab a chance to give back to your community and<br />Earn upto 16,000 per month!</p> */}
         
         <button className="action-button px-4 py-6 text-1xl md:text-4xl my-6"> <a href="https://docs.google.com/forms/d/e/1FAIpQLScEzOmNCmQ6suHCxLOgznQ1ZrJFP-SuQAyWh2UVN4m7h8dQqA/viewform?usp=header" > Become a Care Giver  </a>  </button>
-        </div>
-      </section>
+</div>
+</section>
 
       
     </div>
