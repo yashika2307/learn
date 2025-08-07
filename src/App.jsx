@@ -125,7 +125,7 @@ export default function App() {
          <div className="video-container">
           <video width="100%" height="25%" autoPlay loop muted playsInline className="">
   <source src={JoinComm} type="video/mp4"></source>
-  Your browser does not support the video tag.
+  Your browser does not support video tag.
 </video>
 </div>
         {/* <h1 className="text-4xl font-semibold my-5  text-black">Join the Community!</h1>
