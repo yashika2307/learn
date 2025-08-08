@@ -7,8 +7,11 @@ import SpeakToParents from './assets/parents-visit.png';
 import HomePage from './assets/HomePage.png';
 import JoinComm from './assets/JoinComm.mp4';
 
-
-
+import verifiedIcon from './assets/IconVerified.svg';
+import noCommitmentsIcon from './assets/IconCommit.svg'
+import iconHome from './assets/IconHome.svg'
+import iconEducated from './assets/IconEducated.svg'
+import iconFeedback from './assets/IconFeedback.svg'  
 const services = [
   {
     title: "Call Subscription",
@@ -135,8 +138,10 @@ export default function App() {
 
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
       {/* <!-- Card 1 --> */}
-      <div class="bg-white rounded-[2rem] w-80 h-60 shadow-md p-6 text-center">
-        <div class="mx-auto mb-4 w-16 h-16 rounded-full bg-[#edc6aa] border border-black-500"></div>
+      <div class="bg-white rounded-[2rem] w-80 h-60 shadow-md text-center p-6">
+        <div class="mx-auto mb-4 w-16 h-16 rounded-full bg-[#edc6aa] border border-black-500">
+        <img src={verifiedIcon} alt="Verified Icon" className="w-full h-auto" />
+        </div>
         <h3 class="text-xl font-semibold mb-2 border-b pb-2">Triple Layer Security</h3>
         <p class="text-gray-600 text-sm leading-relaxed">
           Police Verification<br />
@@ -147,7 +152,10 @@ export default function App() {
 
       {/* <!-- Card 2 --> */}
       <div class="bg-white rounded-[2rem] w-80 h-60 shadow-md p-6 text-center">
-        <div class="mx-auto mb-4 w-16 h-16 rounded-full bg-[#edc6aa] border border-black-500"></div>
+        <div class="mx-auto mb-4 w-16 h-16 rounded-full bg-[#edc6aa] border border-black-500">
+        <img src={noCommitmentsIcon} alt="Verified Icon" className="w-full h-auto" />
+
+        </div>
         <h3 class="text-xl font-semibold mb-2 border-b pb-2">No Commitments</h3>
         <p class="text-gray-600 text-sm leading-relaxed">
           Koi monthly charge nahi,<br />
@@ -158,7 +166,10 @@ export default function App() {
 
       {/* <!-- Card 3 --> */}
       <div class="bg-white rounded-[2rem] w-80 h-60 shadow-md p-6 text-center">
-        <div class="mx-auto mb-4 w-16 h-16 rounded-full bg-[#edc6aa] border border-black-500"></div>
+        <div class="mx-auto mb-4 w-16 h-16 rounded-full bg-[#edc6aa] border border-black-500 p-2">
+        <img src={iconHome} alt="Verified Icon" className="w-full h-auto" />
+
+        </div>
         <h3 class="text-xl font-semibold mb-2 border-b pb-2">At Home Services</h3>
         <p class="text-gray-600 text-sm leading-relaxed">
           Ghar vahi, Jaha Suvidha Sabhi<br />
@@ -168,7 +179,10 @@ export default function App() {
 
       {/* <!-- Card 4 --> */}
       <div class="bg-white rounded-[2rem] w-80 h-60 shadow-md p-6 text-center">
-        <div class="mx-auto mb-4 w-16 h-16 rounded-full bg-[#edc6aa] border border-black-500"></div>
+        <div class="mx-auto mb-4 w-16 h-16 rounded-full bg-[#edc6aa] border border-black-500 p-4">
+        <img src={iconEducated} alt="Verified Icon" className="w-full h-auto" />
+
+        </div>
         <h3 class="text-xl font-semibold mb-2 border-b pb-2">Educated Care Givers</h3>
         <p class="text-gray-600 text-sm leading-relaxed">
           Because care requires understanding.<br />
@@ -179,7 +193,10 @@ export default function App() {
 
       {/* <!-- Card 5 --> */}
       <div class="bg-white rounded-[2rem] w-80 h-60 shadow-md p-6 text-center">
-        <div class="mx-auto mb-4 w-16 h-16 rounded-full bg-[#edc6aa] border border-black-500"></div>
+        <div class="mx-auto mb-4 w-16 h-16 rounded-full bg-[#edc6aa] border border-black-500 p-4">
+        <img src={iconFeedback} alt="Verified Icon" className="w-full h-auto" />
+
+        </div>
         <h3 class="text-xl font-semibold mb-2 border-b pb-2">Emergency Assistance</h3>
         <p class="text-gray-600 text-sm leading-relaxed">
           No more dependency in emergency.<br />
@@ -190,7 +207,10 @@ export default function App() {
 
       {/* <!-- Card 6 --> */}
       <div class="bg-white rounded-[2rem] w-80 h-60 shadow-md p-6 text-center">
-        <div class="mx-auto mb-4 w-16 h-16 rounded-full bg-[#edc6aa] border border-black-500"></div>
+        <div class="mx-auto mb-4 w-16 h-16 rounded-full bg-[#edc6aa] border border-black-500 p-4">
+        <img src={iconFeedback} alt="Verified Icon" className="w-full h-auto" />
+
+        </div>
         <h3 class="text-xl font-semibold mb-2 border-b pb-2">Honest Reviews</h3>
         <p class="text-gray-600 text-sm leading-relaxed">
           Caregiver choose karne ka right aapka hai.
