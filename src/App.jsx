@@ -14,9 +14,9 @@ import noCommitmentsIcon from './assets/IconCommit.svg'
 import iconHome from './assets/IconHome.svg'
 import { LiaAmbulanceSolid } from 'react-icons/lia';
 import { FaUserGraduate } from "react-icons/fa"
-
-
 import iconFeedback from './assets/IconFeedback.svg'
+import iconEmergency from './assets/IconEmergency.svg'
+
 const services = [
   {
     title: "Call Subscription",
@@ -211,11 +211,7 @@ export default function App() {
             {/* <!-- Card 5 --> */}
             <div class="bg-white rounded-[2rem] w-80 h-60 shadow-md p-6 text-center">
               <div class="mx-auto mb-4 w-16 h-16 rounded-full bg-[#edc6aa] border border-black-500 p-[0.8rem]">
-                <LiaAmbulanceSolid
-                  className="w-full h-full"
-                  stroke='#fff'
-                  strokeWidth={0}
-                ></LiaAmbulanceSolid>
+               <img src={iconEmergency} alt="Verified Icon" className="w-full h-auto" strokeWidth="40" />
 
               </div>
               <h3 class="text-xl font-semibold mb-2 border-b pb-2">Emergency Assistance</h3>
@@ -243,19 +239,6 @@ export default function App() {
         </div>
       </section>
 
-
-
     </div>
   );
 }
-
-// <div className="video-container">
-//       <video autoPlay loop muted playsInline className="background-video">
-//         <source src="/path-to-your-video.mp4" type="video/mp4" />
-//         Your browser does not support the video tag.
-//       </video>
-//       <div className="content">
-//         <h1>Welcome to My Site</h1>
-//         <p>This is some content over the video background.</p>
-//       </div>
-//     </div>
