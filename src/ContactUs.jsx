@@ -100,10 +100,10 @@ export default function ContactUs() {
             <a href="#" className="w-10 h-10 rounded-full bg-orange-200 flex items-center justify-center">
               <FaFacebook className="text-white" />
             </a>
-            <a href="#" className="w-10 h-10 rounded-full bg-orange-200 flex items-center justify-center">
+            <a href="https://www.instagram.com/welltogetherin?igsh=MTJvMWNrNTVrMHo3bg==" className="w-10 h-10 rounded-full bg-orange-200 flex items-center justify-center">
               <FaInstagram className="text-white" />
             </a>
-            <a href="#" className="w-10 h-10 rounded-full bg-orange-200 flex items-center justify-center">
+            <a href="https://www.linkedin.com/company/well-together-in/" className="w-10 h-10 rounded-full bg-orange-200 flex items-center justify-center">
               <FaLinkedin className="text-white" />
             </a>
             <a href="#" className="w-10 h-10 rounded-full bg-orange-200 flex items-center justify-center">

@@ -223,23 +223,6 @@ export default function App() {
 </section>
 
 
-      {/* Section 4 - Join Community */}
-<section className="bg-mygrey py-12 px-6 text-center">
-        
-         <div >
-         <div className="video-container">
-          <video width="100%" height="25%" autoPlay loop muted playsInline className="">
-  <source src={JoinComm} type=""></source>
-  Your browser does not support the video tag.
-</video> 
-</div>
-        {/* <h1 className="text-4xl font-semibold my-5  text-black">Join the Community!</h1>
-        <p className="mb-4 text-lg font-medium text-black">Grab a chance to give back to your community and<br />Earn upto 16,000 per month!</p> */}
-        
-        <button className="action-button px-4 py-6 text-1xl md:text-4xl my-6"> <a href="https://docs.google.com/forms/d/e/1FAIpQLScEzOmNCmQ6suHCxLOgznQ1ZrJFP-SuQAyWh2UVN4m7h8dQqA/viewform?usp=header" > Become a Care Giver  </a>  </button>
-</div>
-</section>
-
       
     </div>
   );
