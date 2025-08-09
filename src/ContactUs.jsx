@@ -20,7 +20,7 @@ export default function ContactUs() {
   };
 
   return (
-    <div className="min-w- auto min-h-screen bg-white px-max py-max max-w-auto">
+    <div className="w-full min-h-screen bg-white">
       {/* Page Title */}
       <h1 className="text-center text-2xl font-bold text-orange-400 underline mb-8">
         Contact Us

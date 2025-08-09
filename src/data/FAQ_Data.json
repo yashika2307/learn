@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "question": "How do I book a caregiver?",
+      "answer": "You can book a caregiver through our website or by calling our customer service. Choose the service you need, select a caregiver based on their profile, and schedule a date and time that works for you."
+    },
+    {
+      "id": 2,
+      "question": "What services do you offer?",
+      "answer": "We offer a range of services including elderly care, patient care, child care, and emergency assistance. All our caregivers are verified and trained to provide professional care."
+    },
+    {
+      "id": 3,
+      "question": "How do you ensure caregiver quality?",
+      "answer": "We have a triple layer security system which includes police verification, physical home verification, and social media background checks. Additionally, we collect feedback after each service to maintain quality."
+    },
+    {
+      "id": 4,
+      "question": "Do I need to sign up for a subscription?",
+      "answer": "No, we don't require any monthly commitments or unnecessary packages. You can book a caregiver only when you need one, without any long-term obligations."
+    },
+    {
+      "id": 5,
+      "question": "What if I need emergency assistance?",
+      "answer": "Our emergency assistance service is available 24/7. We provide ambulance services and emergency caregivers just a call away, ensuring you're never left without help in critical situations."
+    }
+  ]

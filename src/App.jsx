@@ -15,7 +15,9 @@ import iconHome from './assets/IconHome.svg'
 import { LiaAmbulanceSolid } from 'react-icons/lia';
 import { FaUserGraduate } from "react-icons/fa"
 import iconFeedback from './assets/IconFeedback.svg'
-import iconEmergency from './assets/IconEmergency.svg'
+import iconEmergency from './assets/iconEmergency.svg'
+import FAQ from './components/FAQ';
+import TestimonialCarousel from './components/TestimonialCarousel';
 
 const services = [
   {
@@ -151,7 +153,7 @@ export default function App() {
 
                 />
               </div>
-              <h3 class="text-xl font-semibold mb-2 border-b pb-2">Triple Layer Security</h3>
+              <h3 class="text-xl font-medium mb-2 border-b pb-2">Triple Layer Security</h3>
               <p class="text-gray-600 text-sm leading-relaxed">
                 Police Verification<br />
                 Physical Home Verification<br />
@@ -167,7 +169,7 @@ export default function App() {
                   strokeWidth={1}
                   className='w-full h-full'
                 />        </div>
-              <h3 class="text-xl font-semibold mb-2 border-b pb-2">No Commitments</h3>
+              <h3 class="text-xl font-medium mb-2 border-b pb-2">No Commitments</h3>
               <p class="text-gray-600 text-sm leading-relaxed">
                 Koi monthly charge nahi,<br />
                 koi unnecessary package nahi.<br />
@@ -181,7 +183,7 @@ export default function App() {
                 <img src={iconHome} alt="Verified Icon" className="w-full h-auto" />
 
               </div>
-              <h3 class="text-xl font-semibold mb-2 border-b pb-2">At Home Services</h3>
+              <h3 class="text-xl font-medium mb-2 border-b pb-2">At Home Services</h3>
               <p class="text-gray-600 text-sm leading-relaxed">
                 Ghar vahi, Jaha Suvidha Sabhi<br />
                 Get service at the comfort of your Home.
@@ -200,7 +202,7 @@ export default function App() {
                 />
 
               </div>
-              <h3 class="text-xl font-semibold mb-2 border-b pb-2">Educated Care Givers</h3>
+              <h3 class="text-xl font-medium mb-2 border-b pb-2">Educated Care Givers</h3>
               <p class="text-gray-600 text-sm leading-relaxed">
                 Because care requires understanding.<br />
                 Our caregivers are not just trained,<br />
@@ -211,10 +213,10 @@ export default function App() {
             {/* <!-- Card 5 --> */}
             <div class="bg-white rounded-[2rem] w-80 h-60 shadow-md p-6 text-center">
               <div class="mx-auto mb-4 w-16 h-16 rounded-full bg-[#edc6aa] border border-black-500 p-[0.8rem]">
-               <img src={iconEmergency} alt="Verified Icon" className="w-full h-auto" strokeWidth="40" />
+                <img src={iconEmergency} alt="Verified Icon" className="w-full h-auto" strokeWidth="40" />
 
               </div>
-              <h3 class="text-xl font-semibold mb-2 border-b pb-2">Emergency Assistance</h3>
+              <h3 class="text-xl font-medium mb-2 border-b pb-2">Emergency Assistance</h3>
               <p class="text-gray-600 text-sm leading-relaxed">
                 No more dependency in emergency.<br />
                 Ambulance and caretaker<br />
@@ -228,7 +230,7 @@ export default function App() {
                 <img src={iconFeedback} alt="Verified Icon" className="w-full h-auto" />
 
               </div>
-              <h3 class="text-xl font-semibold mb-2 border-b pb-2">Honest Reviews</h3>
+              <h3 class="text-xl font-medium mb-2 border-b pb-2">Honest Reviews</h3>
               <p class="text-gray-600 text-sm leading-relaxed">
                 Caregiver choose karne ka right aapka hai.
                 Har service ke baad feedback paiye,<br />
@@ -238,7 +240,20 @@ export default function App() {
           </div>
         </div>
       </section>
+      {/* Section 4 - FAQ */}
+      <section className="bg-white py-12">
+        <div className="container-box mx-auto w-full">
+          <FAQ />
+        </div>
+      </section >
+      {/* Section 4 - FAQ */}
+      <section className="bg-white py-12">
+        <div className="container-box mx-auto w-full">
+          <TestimonialCarousel itemsPerSlide={2} />
+        </div>
+      </section >
 
-    </div>
+
+    </div >
   );
 }
