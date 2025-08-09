@@ -1,27 +1,67 @@
 [
     {
       "id": 1,
-      "question": "How do I book a caregiver?",
-      "answer": "You can book a caregiver through our website or by calling our customer service. Choose the service you need, select a caregiver based on their profile, and schedule a date and time that works for you."
+      "question": "How is WellTogether different from other care services??",
+      "answer": "We focus on bridging generational gaps. Our caregivers are college students trained in empathy and companionship, bringing warmth and understanding, not just service. Choose the service you need, select a caregiver based on their profile, and schedule a date and time that works for you."
     },
     {
       "id": 2,
-      "question": "What services do you offer?",
-      "answer": "We offer a range of services including elderly care, patient care, child care, and emergency assistance. All our caregivers are verified and trained to provide professional care."
+      "question": "I’m a student. How can I join as a ManMitra Intern?",
+      "answer": "Fill out the `Become a Caregiver` form on our site. After shortlisting, you’ll be trained and assigned based on your interest and availability."
     },
     {
       "id": 3,
-      "question": "How do you ensure caregiver quality?",
-      "answer": "We have a triple layer security system which includes police verification, physical home verification, and social media background checks. Additionally, we collect feedback after each service to maintain quality."
+      "question": "Is this available only in Jaipur?",
+      "answer": "We are currently active in all over India."
     },
     {
       "id": 4,
-      "question": "Do I need to sign up for a subscription?",
-      "answer": "No, we don't require any monthly commitments or unnecessary packages. You can book a caregiver only when you need one, without any long-term obligations."
+      "question": "How can I reach WellTogether??",
+      "answer": "You can call us anytime at 7756900769 or visit our website www.welltogether.in"
     },
     {
       "id": 5,
-      "question": "What if I need emergency assistance?",
-      "answer": "Our emergency assistance service is available 24/7. We provide ambulance services and emergency caregivers just a call away, ensuring you're never left without help in critical situations."
+      "question": "What kind of services do you provide for elders?",
+      "answer": "We provide companionship(assisted walks, home visits), emergency assistance (ambulance + caregiver) and 24/7 call support."
+    },
+        {
+      "id": 6,
+      "question": "Are your caregivers verified and trained?",
+      "answer": "Yes. Every caregiver goes through a 3-layer verification:Police verification,Physical/document check,Social media and e-background review"
+    },
+    {
+      "id": 7,
+      "question": "What kind of services do you provide for elders?",
+      "answer": "We provide companionship(assisted walks, home visits), emergency assistance (ambulance + caregiver) and 24/7 call support."
+    },
+        {
+      "id": 8,
+      "question": "How do I subscribe to the elder care call service?",
+      "answer": "You can pay ₹99/month for unlimited calls with our trained care team. Just visit our website or call us directly at 7756900769."
+    },
+    {
+      "id": 9,
+      "question": "What happens in case of a medical emergency?",
+      "answer": "We immediately arrange ambulance services and an on-site caregiver, so your loved ones are never alone when they need help most."
+    },
+    {
+      "id": 10,
+      "question": "Is there a minimum commitment or contract?",
+      "answer": "No long-term commitments! You pay as per your needs — no hidden charges or monthly lock-ins."
+    },
+        {
+      "id":11,
+      "question": "How do I book a caregiver for my child at home?",
+      "answer": "Visit our site, select your slot, and we’ll assign a verified, educated caregiver who can manage your child’s needs — from supervision to helping with homework."
+    },
+    {
+      "id": 12,
+      "question": "Are kids’ caregivers trained for special needs?",
+      "answer": "Yes, we have caregivers trained in basic child psychology and first aid, and we match them according to your specific needs."
+    },
+        {
+      "id": 13,
+      "question": "What benefits do student interns get?",
+      "answer": "Earn Salary, Get a internship certificate at the end of your tenure, Flexible hours, Real-world empathy, communication & leadership experience"
     }
   ]
