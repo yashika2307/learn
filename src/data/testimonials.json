@@ -1,58 +1,18 @@
 [
     {
       "id": 1,
-      "author": "Priya Sharma",
+      "author": "Shubham Agnihotri",
       "avatar": "https://randomuser.me/api/portraits/women/67.jpg",
-      "role": "Regular Customer",
-      "comment": "The caregiver for my mother was professional, compassionate, and extremely helpful. She made my mother comfortable and took care of all her needs.",
+      "service": "At home companionship",
+      "comment": "I'm truly grateful for the support Mannmitra provided to my father through the Well Together initiative. The meaningful conversations they had were not only engaging but also brought a sense of comfort and connection to my father's life. The service was exceptional, and I highly recommend Well Together for their compassionate and personalized approach. Thank you for making a positive impact on my father's well-being!",
       "rating": 5
     },
     {
       "id": 2,
-      "author": "Raj Malhotra",
+      "author": "Pushpak Gupta",
       "avatar": "https://randomuser.me/api/portraits/men/32.jpg",
-      "role": "First-time User",
-      "comment": "I was impressed by the emergency assistance service. The ambulance arrived quickly and the paramedics were well-trained and efficient.",
+      "service": "At home Companionship",
+      "comment": "Wow. didn't know such kind of services exist and that too with such affordable price. we had to go out for a function and booked well together service where they sent someone to accompany my parents. My parents had a great time while we were out. will definitely reach out again when we are in such situations",
       "rating": 5
-    },
-    {
-      "id": 3,
-      "author": "Sunita Patel",
-      "avatar": "https://randomuser.me/api/portraits/women/44.jpg",
-      "role": "Parent",
-      "comment": "The childcare provider was amazing with my kids! They were engaged, happy, and well-taken care of. I'll definitely use this service again.",
-      "rating": 4
-    },
-    {
-      "id": 4,
-      "author": "Vikram Singh",
-      "avatar": "https://randomuser.me/api/portraits/men/52.jpg",
-      "role": "Son of Elderly Patient",
-      "comment": "Finding trustworthy care for my father was challenging until I found this service. Their educated caregivers provided exceptional care and genuine compassion.",
-      "rating": 5
-    },
-    {
-      "id": 5,
-      "avatar": "https://randomuser.me/api/portraits/women/28.jpg",
-      "author": "Meera Kapoor",
-      "role": "Daughter",
-      "comment": "The at-home services were a blessing for my bedridden mother. The caregiver was punctual, professional, and treated my mother with dignity and respect.",
-      "rating": 5
-    },
-    {
-        "id": 6,
-        "author": "Raj Malhotra",
-        "avatar": "https://randomuser.me/api/portraits/men/32.jpg",
-        "role": "First-time User",
-        "comment": "I was impressed by the emergency assistance service. The ambulance arrived quickly and the paramedics were well-trained and efficient.",
-        "rating": 5
-      },
-      {
-        "id": 7,
-        "author": "Sunita Patel",
-        "avatar": "https://randomuser.me/api/portraits/women/44.jpg",
-        "role": "Parent",
-        "comment": "The childcare provider was amazing with my kids! They were engaged, happy, and well-taken care of. I'll definitely use this service again.",
-        "rating": 4
-      }
+    }
   ]

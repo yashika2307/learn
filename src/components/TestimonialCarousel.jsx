@@ -1,4 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { Rating } from '@mui/material';
+
 import testimonialData from '../data/testimonials.json';
 
 const TestimonialCarousel = ({ itemsPerSlide = 2 }) => {
@@ -196,7 +198,7 @@ const TestimonialCarousel = ({ itemsPerSlide = 2 }) => {
         <section className="py-2 bg-white">
             <div className="container mx-auto px-4">
                 <h2 className="text-4xl font-semibold text-center mb-12">
-                    What Our Clients Say
+                    What Our Customers Say
                 </h2>
 
                 <div className="relative max-w-6xl mx-auto">
@@ -246,20 +248,10 @@ const TestimonialCarousel = ({ itemsPerSlide = 2 }) => {
                                             </div>
                                             <div>
                                                 <p className="font-semibold text-gray-900">{testimonial.author}</p>
-                                                <p className="text-xs text-gray-500">{testimonial.role}</p>
-                                                <div className="flex mt-1">
-                                                    {[...Array(5)].map((_, i) => (
-                                                        <svg
-                                                            key={i}
-                                                            className={`w-4 h-4 ${i < testimonial.rating ? 'text-yellow-500' : 'text-gray-300'
-                                                                }`}
-                                                            fill="currentColor"
-                                                            viewBox="0 0 20 20"
-                                                        >
-                                                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8-2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118l-2.799-2.034c-.784-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                                        </svg>
-                                                    ))}
-                                                </div>
+                                                <p className="text-xs text-gray-500"><span className="font-bold">Service Used: </span>{testimonial.service.split(' ').map(word =>
+                                                    word.charAt(0).toUpperCase() + word.slice(1)
+                                                ).join(' ')}</p>
+                                                <Rating name="half-rating-read" defaultValue={2.5} value={testimonial.rating} precision={0.5} readOnly />
                                             </div>
                                         </div>
                                     </div>

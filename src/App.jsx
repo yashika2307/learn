@@ -247,11 +247,11 @@ export default function App() {
         </div>
       </section >
       {/* Section 4 - FAQ */}
-      <section className="bg-white py-12">
+      {/* <section className="bg-white py-12">
         <div className="container-box mx-auto w-full">
           <TestimonialCarousel itemsPerSlide={2} />
         </div>
-      </section >
+      </section > */}
 
 
     </div >
