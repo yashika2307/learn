@@ -31,8 +31,8 @@ export default function BookService() {
         .split('T')[0];
 
     // Replace with your deployed Apps Script Web App URL
-    const WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbwTVnWyzwIgdm9YGknn78PE4hxrkjfaal0VM-qo9HIUni_vVbXvz1QKLy9jnqovbxat8Q/exec'
-
+    const WEB_APP_URL =
+        'https://script.google.com/macros/s/AKfycby1SrFHZY0EQywy5CpJgrNeXdWCyyzp6w8SXrccNUVlouPXNeEIHQ6lrg8NJkDAfh6XhA/exec'
     // Prefill service from URL ?service=...
     useEffect(() => {
         const params = new URLSearchParams(location.search);
@@ -81,27 +81,37 @@ export default function BookService() {
             return;
         }
 
-        // Save locally (existing behavior)
-        try {
-            const existing = JSON.parse(localStorage.getItem('bookServiceSubmissions') || '[]');
-            const entry = {
-                ...form,
-                id: (crypto && 'randomUUID' in crypto && crypto.randomUUID()) || Date.now(),
-                createdAt: new Date().toISOString(),
-            };
-            localStorage.setItem('bookServiceSubmissions', JSON.stringify([...existing, entry]));
-        } catch (e) {
-            console.warn('Local save failed:', e);
-        }
+        // // Save locally (existing behavior)
+        // try {
+        //     const existing = JSON.parse(localStorage.getItem('bookServiceSubmissions') || '[]');
+        //     const entry = {
+        //         ...form,
+        //         id: (crypto && 'randomUUID' in crypto && crypto.randomUUID()) || Date.now(),
+        //         createdAt: new Date().toISOString(),
+        //     };
+        //     localStorage.setItem('bookServiceSubmissions', JSON.stringify([...existing, entry]));
+        // } catch (e) {
+        //     console.warn('Local save failed:', e);
+        // }
+        console.log("trynssgg")
 
         // Best-effort send to Google Sheets
         try {
-            await fetch(WEB_APP_URL, {
-                method: 'POST',
-                mode: 'no-cors',
-                headers: { 'Content-Type': 'text/plain;charset=utf-8' },
-                body: JSON.stringify(form),
+            const formData = new FormData();
+            Object.entries(form).forEach(([key, value]) => {
+                formData.append(key, value);
             });
+            console.log("tryngg")
+            let res = await fetch(WEB_APP_URL, {
+                method: 'POST',
+                body: formData
+            });
+            console.log('ress', res)
+            if (res.ok) {
+                console.log('Request was successful:', res);
+            } else {
+                console.log('Request Failed:', res);
+            }
         } catch (e) {
             openSnack('Saved locally. Could not reach Google Sheets.', 'warning');
         }

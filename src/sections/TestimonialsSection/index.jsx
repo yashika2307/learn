@@ -60,7 +60,7 @@ const TestimonialsSection = () => {
                                             <div className="h-12 w-12 rounded-full overflow-hidden mr-4">
                                                 {t.avatar ? (
                                                     <img
-                                                        src={Testimonial_Shubham}
+                                                        src={t.avatar}
                                                         alt={t.author}
                                                         className="h-full w-full object-cover"
                                                     />
@@ -73,7 +73,7 @@ const TestimonialsSection = () => {
                                                 )}
                                             </div>
                                             <div>
-                                                <p className="font-semibold text-gray-900">{t.author}</p>
+                                                <p className="font-semibold text-gray-900">{t.author.split(' ')[0]}</p>
                                                 {(t.role || t.service) && (
                                                     <p className="text-xs text-gray-500">
                                                         {capitalizeWords(t.role || t.service)}
