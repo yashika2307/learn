@@ -31,7 +31,7 @@ export default function BookService() {
         .split('T')[0];
 
     // Replace with your deployed Apps Script Web App URL
-    const WEB_APP_URL = 'https://docs.google.com/spreadsheets/d/1LZLK_MrXK782J9ZxIzMo2GMmsCT_AnbVHT0kmONSq-4/edit?usp=sharing'
+    const WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbwTVnWyzwIgdm9YGknn78PE4hxrkjfaal0VM-qo9HIUni_vVbXvz1QKLy9jnqovbxat8Q/exec'
 
     // Prefill service from URL ?service=...
     useEffect(() => {
@@ -98,7 +98,8 @@ export default function BookService() {
         try {
             await fetch(WEB_APP_URL, {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
+                mode: 'no-cors',
+                headers: { 'Content-Type': 'text/plain;charset=utf-8' },
                 body: JSON.stringify(form),
             });
         } catch (e) {

@@ -73,4 +73,4 @@ await fetch(WEB_APP_URL, {
 curl -X POST \
   -H 'Content-Type: text/plain; charset=utf-8' \
   -d '{"name":"Jane","whoFor":"Myself","service":"Call subscription","date":"2025-08-20","mobile":"9999999999","email":"jane@example.com","notes":"N/A"}' \
-  'https://script.google.com/macros/s/DEPLOYMENT_ID/exec'
+  'https://script.google.com/macros/s/AKfycby1SrFHZY0EQywy5CpJgrNeXdWCyyzp6w8SXrccNUVlouPXNeEIHQ6lrg8NJkDAfh6XhA/exec'

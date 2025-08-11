@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import testimonialsData from '../../data/testimonials.json';
-
+import Testimonial_Shubham from '../../assets/Testimonial_Shubham.jpeg';
+import Testimonial_Pushpak from '../../assets/Testimonial_Pushpak.jpeg';
 const TestimonialsSection = () => {
     const [testimonials, setTestimonials] = useState([]);
     const [index, setIndex] = useState(0);
@@ -59,7 +60,7 @@ const TestimonialsSection = () => {
                                             <div className="h-12 w-12 rounded-full overflow-hidden mr-4">
                                                 {t.avatar ? (
                                                     <img
-                                                        src={t.avatar}
+                                                        src={Testimonial_Shubham}
                                                         alt={t.author}
                                                         className="h-full w-full object-cover"
                                                     />
