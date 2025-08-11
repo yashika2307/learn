@@ -51,38 +51,36 @@ const FAQ = () => {
     }
 
     return (
-        <section className="bg-white py-12">
-            <div className="container mx-auto">
-                <h2 className="text-4xl font-semibold text-black text-center mb-12">
-                    Frequently Asked Questions
-                </h2>
+        <>
+            <h2 className="text-4xl font-semibold text-black text-center mb-12">
+                Frequently Asked Questions
+            </h2>
 
-                <div className="mx-auto w-full">
-                    {faqs.map((faq) => (
-                        <Accordion
-                            key={faq.id}
-                            expanded={expanded === `panel${faq.id}`}
-                            onChange={handleChange(`panel${faq.id}`)}
-                            sx={accordionStyles}
+            <div className="mx-auto w-[90%]">
+                {faqs.map((faq) => (
+                    <Accordion
+                        key={faq.id}
+                        expanded={expanded === `panel${faq.id}`}
+                        onChange={handleChange(`panel${faq.id}`)}
+                        sx={accordionStyles}
+                    >
+                        <AccordionSummary
+                            expandIcon={<ExpandMoreIcon />}
+                            aria-controls={`panel${faq.id}-content`}
+                            id={`panel${faq.id}-header`}
+                            sx={accordionSummaryStyles}
                         >
-                            <AccordionSummary
-                                expandIcon={<ExpandMoreIcon />}
-                                aria-controls={`panel${faq.id}-content`}
-                                id={`panel${faq.id}-header`}
-                                sx={accordionSummaryStyles}
-                            >
-                                <Typography className="font-medium text-lg">{faq.question}</Typography>
-                            </AccordionSummary>
-                            <AccordionDetails sx={{ padding: '16px 24px', background: '#fff' }}>
-                                <Typography className="text-gray-600">
-                                    {faq.answer}
-                                </Typography>
-                            </AccordionDetails>
-                        </Accordion>
-                    ))}
-                </div>
+                            <Typography className="font-medium text-lg">{faq.question}</Typography>
+                        </AccordionSummary>
+                        <AccordionDetails sx={{ padding: '16px 24px', background: '#fff' }}>
+                            <Typography className="text-gray-600">
+                                {faq.answer}
+                            </Typography>
+                        </AccordionDetails>
+                    </Accordion>
+                ))}
             </div>
-        </section>
+        </>
     );
 };
 

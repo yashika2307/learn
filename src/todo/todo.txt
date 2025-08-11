@@ -1,14 +1,16 @@
 1. Home
-    a. Fix testimonials responsiveness -> 30 min
+    a. Fix testimonials responsiveness -> done
     b. Remove extra testimonials from home ->done
     c. Add Book Now button in home page cards  
     d. Footer- add links to testimonials, blogs, services
     e. What our clients say- what our customers say ->done
     f. Social Media icons link to be added
     g. Testimonial- At Home Companionship -> done
-    h. Fix filder structure
+    h. Fix folder structure
 2. Fix contact us page
-    a. Contact us page alignment
+    a. Contact us page alignment->done
     b. Add contact us button link to excel sheet(link is given in code)
     c. Copy icon functionality to be added on contact us- reach out to us
 3. Join us page not working
+
+https://docs.google.com/spreadsheets/d/1LZLK_MrXK782J9ZxIzMo2GMmsCT_AnbVHT0kmONSq-4/edit?usp=sharing

@@ -11,6 +11,7 @@ import Header from './Header.jsx'
 import React from 'react'
 import ReactDOM from 'react-dom'
 import Layout from './Layout.jsx'
+import BookService from './Pages/BookService/index.jsx'
 import "./App.css"
 // import Router from 'react-router'
 // import routes from './routes'
@@ -32,15 +33,19 @@ createRoot(document.getElementById('root')).render(
 function Main() {
   return (
     <Router>
-      <Layout>
-        <Routes>
-          <Route path="/" element={<App />} />
-          <Route path="/AboutUs" element={<AboutUs />} />
-          <Route path="/Support" element={<ContactUs />} />
-          <Route path="/Register" element={<Register />} />
-          <Route path="/SignIn" element={<SignIn />} />
-        </Routes>
-      </Layout>
+
+      <div className='w-full'>
+        <Layout>
+          <Routes>
+            <Route path="/" element={<App />} />
+            <Route path="/AboutUs" element={<AboutUs />} />
+            <Route path="/Support" element={<ContactUs />} />
+            <Route path="/Register" element={<Register />} />
+            <Route path="/SignIn" element={<SignIn />} />
+            <Route path='/BookService' element={<BookService />} />
+          </Routes>
+        </Layout>
+      </div>
     </Router>
   );
 }
