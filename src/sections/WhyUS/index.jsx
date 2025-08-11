@@ -62,8 +62,6 @@ const WhyUsSection = () => {
                 "Caregiver choose karne ka right aapka hai.",
                 "Har service ke baad feedback paiye,",
                 "aapke experience se hi hum behtar hote hain.",
-                "aapke experience se hi hum behtar hote hain.",
-                "aapke experience se hi hum behtar hote hain."
             ],
             iconPadding: "p-3.5"
         }
