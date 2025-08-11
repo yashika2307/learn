@@ -14,3 +14,63 @@
 3. Join us page not working
 
 https://docs.google.com/spreadsheets/d/1LZLK_MrXK782J9ZxIzMo2GMmsCT_AnbVHT0kmONSq-4/edit?usp=sharing
+
+
+
+// Google Apps Script (in your Sheet's Apps Script editor)
+const SHEET_NAME = 'Sheet1'; // change if needed
+
+function doPost(e) {
+  try {
+    if (!e || !e.postData || !e.postData.contents) {
+      return json_({ ok: false, error: 'No body' });
+    }
+
+    // Content-Type can be text/plain or application/json; we parse the raw body
+    const data = JSON.parse(e.postData.contents || '{}');
+
+    const sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(SHEET_NAME);
+    if (!sheet) return json_({ ok: false, error: 'Sheet not found: ' + SHEET_NAME });
+
+    // Append; add/remove fields as needed
+    sheet.appendRow([
+      new Date(),                 // Timestamp
+      data.name || '',
+      data.whoFor || '',
+      data.service || '',
+      data.date || '',
+      data.mobile || '',
+      data.email || '',
+      data.notes || ''
+    ]);
+
+    return json_({ ok: true });
+  } catch (err) {
+    return json_({ ok: false, error: err && err.message ? err.message : String(err) });
+  }
+}
+
+// Helper to return JSON
+function json_(obj) {
+  return ContentService
+    .createTextOutput(JSON.stringify(obj))
+    .setMimeType(ContentService.MimeType.JSON);
+}
+
+
+
+
+// Use text/plain to avoid preflight; you’ll still POST JSON
+await fetch(WEB_APP_URL, {
+  method: 'POST',
+  headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+  body: JSON.stringify(formData), // { name, whoFor, service, date, mobile, email, notes }
+});
+// If you need a readable response, you’d need a backend proxy or accept preflight.
+
+
+
+curl -X POST \
+  -H 'Content-Type: text/plain; charset=utf-8' \
+  -d '{"name":"Jane","whoFor":"Myself","service":"Call subscription","date":"2025-08-20","mobile":"9999999999","email":"jane@example.com","notes":"N/A"}' \
+  'https://script.google.com/macros/s/DEPLOYMENT_ID/exec'
