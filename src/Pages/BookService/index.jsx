@@ -32,7 +32,7 @@ export default function BookService() {
 
     // Replace with your deployed Apps Script Web App URL
     const WEB_APP_URL =
-        'https://script.google.com/macros/s/AKfycby1SrFHZY0EQywy5CpJgrNeXdWCyyzp6w8SXrccNUVlouPXNeEIHQ6lrg8NJkDAfh6XhA/exec'
+        'https://script.google.com/macros/s/AKfycbzTo8eQVLpnA9SJPdAuWnQCu2nXIpj4-PwoArfp6DEPVw_pFhkDiPOsuo_vuOIjG-XFNA/exec'
     // Prefill service from URL ?service=...
     useEffect(() => {
         const params = new URLSearchParams(location.search);
@@ -108,7 +108,8 @@ export default function BookService() {
             });
             console.log('ress', res)
             if (res.ok) {
-                console.log('Request was successful:', res);
+                console.log('Request was successful:', res)
+                res.body.json().then(d => console.log("ddd", d));
             } else {
                 console.log('Request Failed:', res);
             }
