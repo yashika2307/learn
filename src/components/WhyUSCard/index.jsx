@@ -2,7 +2,7 @@ import React from 'react';
 
 const WhyUsCard = ({ icon: Icon, customIcon, title, description, iconPadding = "p-3" }) => {
     return (
-        <div className="bg-white rounded-[2rem] w-80 min-h-[22rem] shadow-md p-6 text-center flex flex-col justify-start">
+        <div className="bg-white rounded-[2rem] w-80 min-h-[18rem] shadow-md p-6 text-center flex flex-col justify-start">
             <div className={`mx-auto mb-4 w-16 h-16 rounded-full bg-[#edc6aa] border border-black-500 ${iconPadding}`}>
                 {Icon && <Icon className="w-full h-full" strokeWidth={1} />}
                 {customIcon && customIcon}
