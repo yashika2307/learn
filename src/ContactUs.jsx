@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import { FaPhoneAlt, FaWhatsapp, FaEnvelope, FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import ContentCopyIcon from '@mui/icons-material/ContentCopy';
+import Snackbar from '@mui/material/Snackbar';
+import Alert from '@mui/material/Alert';
 
 export default function ContactUs() {
   const [formData, setFormData] = useState({
@@ -8,27 +11,69 @@ export default function ContactUs() {
     email: "",
     description: "",
   });
+  const [snack, setSnack] = useState({ open: false, message: '', severity: 'success' });
+  const [submitting, setSubmitting] = useState(false);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const openSnack = (message, severity = 'success') => setSnack({ open: true, message, severity });
+  const handleSnackClose = (event, reason) => {
+    if (reason === 'clickaway') return;
+    setSnack((s) => ({ ...s, open: false }));
+  };
+
+  // Replace with your deployed Apps Script Web App URL
+  const WEB_APP_URL =
+    'https://script.google.com/macros/s/AKfycby0R7T2_lSe5qT9vnBTcEMLWuWeC7RND2qNhka-r8XmDzxEHbIeiTtr8ACXFL0Nan7l/exec'
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    // Add API call or form submission logic here
+    setSubmitting(true);
+    // Basic validation
+    if (!formData.name || !formData.phone || !formData.email) {
+      openSnack('Please fill all required fields.', 'error');
+      setSubmitting(false);
+      return;
+    }
+    try {
+      const formPayload = new FormData();
+      Object.entries(formData).forEach(([key, value]) => {
+        formPayload.append(key, value);
+      });
+      let res = await fetch(WEB_APP_URL, {
+        method: 'POST',
+        body: formPayload
+      });
+      console.log("resss", res)
+      if (res.ok) {
+        openSnack('Thanks! Your request has been saved.', 'success');
+        setFormData({ name: '', phone: '', email: '', description: '' });
+      } else {
+        openSnack('Could not reach Google Sheets. Try again later.', 'warning');
+      }
+    } catch (e) {
+      openSnack('Could not reach Google Sheets. Try again later.', 'warning');
+    }
+    setSubmitting(false);
+  };
+
+  // Copy WhatsApp number to clipboard
+  const handleCopyWhatsapp = () => {
+    navigator.clipboard.writeText('+91 7756900769');
+    openSnack('WhatsApp number copied!', 'success');
   };
 
   return (
-    <div className=" w-full overflow-x-hidden p-10">
-
-      <div className="container-box  bg-white ">  {/* Page Title */}
+    <div className="w-full overflow-x-hidden p-10">
+      <div className="container-box bg-white">
+        {/* Page Title */}
         <h1 className="text-center text-2xl font-bold text-orange-400 underline mb-8">
           Contact Us
         </h1>
 
-        {/* Request a Callback ; link to document: https://docs.google.com/spreadsheets/d/1ig3shA9MBufGRsRlhAjPQiTNUsGKT8mcBpgoS8_vbVM/edit?gid=0#gid=0 */}
-        <div className="border border-orange-200 rounded-2xl p-6  mx-auto mb-10">
+        {/* Request a Callback */}
+        <div className="border border-orange-200 rounded-2xl p-6 mx-auto mb-10">
           <h2 className="text-xl font-bold text-orange-400 underline mb-6">
             Request A CallBack
           </h2>
@@ -67,9 +112,10 @@ export default function ContactUs() {
             ></textarea>
             <button
               type="submit"
-              className="bg-orange-400 text-white px-6 py-1 rounded-full hover:bg-orange-500"
+              className="bg-orange-400 text-white px-6 py-1 rounded-full hover:bg-orange-500 disabled:opacity-60"
+              disabled={submitting}
             >
-              Submit
+              {submitting ? 'Submitting...' : 'Submit'}
             </button>
           </form>
         </div>
@@ -87,10 +133,24 @@ export default function ContactUs() {
             <p>
               <FaWhatsapp className="inline text-green-500 mr-2" />
               Whatsapp Us: <a href="https://wa.me/917756900769" className="text-black">+91 7756900769</a>
+              <button type="button" onClick={handleCopyWhatsapp} className="ml-2 align-middle" title="Copy WhatsApp number">
+                <ContentCopyIcon fontSize="small" className="text-gray-500 hover:text-orange-400" />
+              </button>
             </p>
             <p>
               <FaEnvelope className="inline text-orange-400 mr-2" />
               Email Us: <a href="mailto:welltogetherin@gmail.com" className="text-black">welltogetherin@gmail.com</a>
+              <button
+                type="button"
+                onClick={() => {
+                  navigator.clipboard.writeText('welltogetherin@gmail.com');
+                  openSnack('Email address copied!', 'success');
+                }}
+                className="ml-2 align-middle"
+                title="Copy Email address"
+              >
+                <ContentCopyIcon fontSize="small" className="text-gray-500 hover:text-orange-400" />
+              </button>
             </p>
           </div>
 
@@ -113,6 +173,18 @@ export default function ContactUs() {
             </div>
           </div>
         </div>
+
+        {/* Snackbar for error/success */}
+        <Snackbar
+          open={snack.open}
+          autoHideDuration={4000}
+          onClose={handleSnackClose}
+          anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
+        >
+          <Alert onClose={handleSnackClose} severity={snack.severity} variant="filled" sx={{ width: '100%' }}>
+            {snack.message}
+          </Alert>
+        </Snackbar>
       </div>
     </div>
   );
