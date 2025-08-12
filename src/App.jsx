@@ -14,7 +14,7 @@ const services = [
   {
     title: "Call Subscription",
     description: <>
-      Unlimited calls. Unlimited care.
+      Unlimited Calls. Unlimited Care.
       <br /><br />
       Sometimes, all they need is someone to talk to. Hamare trained caregivers and listeners are just a call away — every day, anytime.
     </>,
@@ -28,7 +28,7 @@ const services = [
   },
   {
     title: "Emergency Subscription",
-    description: <>Kabhi kabhi zarurat turant hoti hai. <br /><br /> Whether it's a fall, sudden illness, or unexpected situation — ambulance aur caretaker ek call door. Even if you’re far away, we’re always close.</>,
+    description: <>Kabhi Kabhi Zarurat Turant Hoti Hai. <br /><br /> Whether it's a fall, sudden illness, or unexpected situation — ambulance aur caretaker ek call door. Even if you’re far away, we’re always close.</>,
     image: KidCare,
     comingSoon: false
   },

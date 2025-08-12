@@ -60,7 +60,7 @@ const WhyUsSection = () => {
             customIcon: <img src={IconFeedback} alt="Feedback Icon" className="w-full h-auto" />,
             title: "Honest Reviews",
             description: [
-                "Caregiver choose karne ka right aapka hai.",
+                "Caregiver choose karne ka right aapka.",
                 "Har service ke baad feedback paiye,",
                 "aapke experience se hi hum behtar hote hain.",
             ],
