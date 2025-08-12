@@ -93,7 +93,7 @@ export default function BookService() {
         // } catch (e) {
         //     console.warn('Local save failed:', e);
         // }
-        console.log("trynssgg")
+        
 
         // Best-effort send to Google Sheets
         try {
@@ -101,15 +101,13 @@ export default function BookService() {
             Object.entries(form).forEach(([key, value]) => {
                 formData.append(key, value);
             });
-            console.log("tryngg")
             let res = await fetch(WEB_APP_URL, {
                 method: 'POST',
                 body: formData
             });
-            console.log('ress', res)
             if (res.ok) {
-                console.log('Request was successful:', res)
-                res.body.json().then(d => console.log("ddd", d));
+                // console.log('Request was successful:', res)
+                // res.body.json().then(d => console.log("ddd", d));
             } else {
                 console.log('Request Failed:', res);
             }
@@ -118,7 +116,7 @@ export default function BookService() {
         }
 
         setSubmitted(true);
-        openSnack('Thanks! Your request has been saved.', 'success');
+        openSnack('Thank You, Your request has been received. Our team will connect back with you.', 'success');
         setForm({
             name: '',
             whoFor: 'Myself',

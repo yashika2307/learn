@@ -70,9 +70,9 @@ export default function ContactUs() {
         method: 'POST',
         body: formPayload
       });
-      console.log("resss", res)
+     
       if (res.ok) {
-        openSnack('Thanks! Your request has been saved.', 'success');
+        openSnack('Thank You, Your request has been received. Our team will connect back with you.', 'success');
         setFormData({ name: '', phone: '', email: '', description: '' });
       } else {
         openSnack('Could not reach Google Sheets. Try again later.', 'warning');
