@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import WhyUsCard from '../../components/WhyUSCard';
-import { HiOutlineShieldCheck, HiOutlineClock, HiOutlineUserGroup } from 'react-icons/hi';
+import { HiOutlineShieldCheck, HiOutlineUserGroup } from 'react-icons/hi';
 import { FaUserGraduate } from 'react-icons/fa';
+import { LuCalendarX } from 'react-icons/lu';
 // Import your image assets
 import iconEmergency from '../../assets/iconEmergency.svg'; // Update path as needed
 import IconFeedback from '../../assets/IconFeedback.svg'; // Update path as needed
-
+import IconHome from '../../assets/IconHome.svg'; // Update path as needed
 const WhyUsSection = () => {
     const whyUsCards = [
         {
@@ -18,21 +19,21 @@ const WhyUsSection = () => {
             ]
         },
         {
-            icon: HiOutlineClock,
+            icon: LuCalendarX, // <-- pass the component, not <LuCalendarX ... />
             title: "No Commitments",
             description: [
-                "No Long-term Contracts",
-                "Pay-as-you-go Service",
-                "Flexible Scheduling"
-            ]
+                "Koi monthly charge nahi,",
+                "Koi unnecessary package nahi",
+                "Bas zarurat padne par caregiver bulaiye"
+            ],
+            iconPadding: "p-3.5"
         },
         {
-            icon: HiOutlineUserGroup,
-            title: "Verified Professionals",
+            customIcon: <img src={IconHome} alt="At home service Icon" className="w-full h-auto" />,
+            title: "At Home Services",
             description: [
-                "Thoroughly Vetted Staff",
-                "Experienced Personnel",
-                "Regular Quality Assessments"
+                "Ghar wahi, Jahan Suvidha Sabhi",
+                "Get service at the comfort of your home",
             ]
         },
         {
