@@ -59,8 +59,6 @@ export default function App() {
       <FAQSection />
       {/* Section 5 - Testimonial */}
       <TestimonialSection />
-
-
     </div >
   );
 }
