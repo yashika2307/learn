@@ -51,7 +51,7 @@ export default function ContactUs() {
 
   // Replace with your deployed Apps Script Web App URL
   const WEB_APP_URL =
-    'https://script.google.com/macros/s/AKfycby0R7T2_lSe5qT9vnBTcEMLWuWeC7RND2qNhka-r8XmDzxEHbIeiTtr8ACXFL0Nan7l/exec'
+    'https://script.google.com/macros/s/AKfycbxu0EXegQYqTVjAL-O9uoIixwxE1Df8gTHilfgV9irtsTTAGOv3C2ZVcDj3xSQApYKE/exec'
   const handleSubmit = async (e) => {
     e.preventDefault();
     setSubmitting(true);
@@ -70,7 +70,7 @@ export default function ContactUs() {
         method: 'POST',
         body: formPayload
       });
-     
+
       if (res.ok) {
         openSnack('Thank You, Your request has been received. Our team will connect back with you.', 'success');
         setFormData({ name: '', phone: '', email: '', description: '' });
@@ -201,7 +201,7 @@ export default function ContactUs() {
               <a href="https://www.linkedin.com/company/well-together-in/" className="w-10 h-10 rounded-full bg-orange-200 flex items-center justify-center">
                 <FaLinkedin className="text-white" />
               </a>
-            
+
             </div>
           </div>
         </div>

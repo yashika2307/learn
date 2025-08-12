@@ -47,9 +47,6 @@ function Header() {
       {isMenuOpen && (
         <div className="md:hidden px-4 pt-2 pb-4 space-y-2">
           <Link to="/" className="block text-black hover:text-black hover:font-bold">Home</Link>
-          <Link to="/BookService" className="block text-black hover:text-blue-900 hover:font-bold">Book Service</Link>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeCWx4_C09BtXH-NO0K8HPaNAIT3OL2Cu4ZILtv__Dzz9lIyA/viewform?usp=header" className="block text-black hover:text-blue-900 hover:font-bold">Find Care Giver</a>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLScEzOmNCmQ6suHCxLOgznQ1ZrJFP-SuQAyWh2UVN4m7h8dQqA/viewform?usp=header" className="block text-black hover:text-blue-900 hover:font-bold">Become a Care Giver</a>
           <Link to="/AboutUs" className="block text-black hover:text-blue-900 hover:font-bold">About Us</Link>
           <Link to="/Support" className="block text-black hover:text-blue-900 hover:font-bold">Contact Us</Link>
         </div>

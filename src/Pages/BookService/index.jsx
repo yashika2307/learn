@@ -16,6 +16,7 @@ export default function BookService() {
     });
     const [submitted, setSubmitted] = useState(false);
     const [error, setError] = useState('');
+    const [submitting, setSubmitting] = useState(false);
     // Snackbar state
     const [snack, setSnack] = useState({ open: false, message: '', severity: 'success' });
 
@@ -32,7 +33,7 @@ export default function BookService() {
 
     // Replace with your deployed Apps Script Web App URL
     const WEB_APP_URL =
-        'https://script.google.com/macros/s/AKfycbzTo8eQVLpnA9SJPdAuWnQCu2nXIpj4-PwoArfp6DEPVw_pFhkDiPOsuo_vuOIjG-XFNA/exec'
+        'https://script.google.com/macros/s/AKfycbwv_iWc9cZ_IqpZM67n9vR5gM8VD926VUlFIxSOfPTv8zozdpqcaais5xWPp_UKbXYVJQ/exec'
     // Prefill service from URL ?service=...
     useEffect(() => {
         const params = new URLSearchParams(location.search);
@@ -51,12 +52,14 @@ export default function BookService() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        setSubmitting(true); // <-- set submitting true
 
         // Required validations
         if (!form.name || !form.whoFor || !form.service || !form.date || !form.mobile || !form.email) {
             const msg = 'Please fill all required fields.';
             setError(msg);
             openSnack(msg, 'error');
+            setSubmitting(false);
             return;
         }
         // Date must be today or future
@@ -64,6 +67,7 @@ export default function BookService() {
             const msg = 'Please choose today or a future date.';
             setError(msg);
             openSnack(msg, 'error');
+            setSubmitting(false);
             return;
         }
         // Mobile: exactly 10 digits
@@ -71,6 +75,7 @@ export default function BookService() {
             const msg = 'Please enter a valid 10-digit mobile number.';
             setError(msg);
             openSnack(msg, 'error');
+            setSubmitting(false);
             return;
         }
         // Basic email format validation (input type=email also helps)
@@ -78,6 +83,7 @@ export default function BookService() {
             const msg = 'Please enter a valid email address.';
             setError(msg);
             openSnack(msg, 'error');
+            setSubmitting(false);
             return;
         }
 
@@ -93,7 +99,7 @@ export default function BookService() {
         // } catch (e) {
         //     console.warn('Local save failed:', e);
         // }
-        
+
 
         // Best-effort send to Google Sheets
         try {
@@ -113,6 +119,8 @@ export default function BookService() {
             }
         } catch (e) {
             openSnack('Saved locally. Could not reach Google Sheets.', 'warning');
+        } finally {
+            setSubmitting(false); // <-- set submitting false after request
         }
 
         setSubmitted(true);
@@ -277,8 +285,9 @@ export default function BookService() {
                         <button
                             type="submit"
                             className="w-full md:w-auto inline-flex items-center justify-center rounded-md bg-orange-400 hover:bg-orange-500 text-white font-semibold px-6 py-2 transition-colors"
+                            disabled={submitting} // <-- disable when submitting
                         >
-                            Submit
+                            {submitting ? "Submitting..." : "Submit"}
                         </button>
                     </div>
                 </form>
