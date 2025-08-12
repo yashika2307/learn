@@ -44,7 +44,7 @@ export default function AboutUs() {
             </div>
 
             {/* Vision & Mission */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto mb-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mx-auto mb-10">
               <div className="border border-orange-200 rounded-2xl p-6">
                 <h2 className="text-xl font-bold text-orange-400 mb-4">Vision</h2>
                 <p className="text-gray-700">
@@ -60,7 +60,7 @@ export default function AboutUs() {
             </div>
 
             {/* Our Presence */}
-            <div className="border border-orange-200 rounded-2xl p-6 max-w-4xl mx-auto mb-10">
+            <div className="border border-orange-200 rounded-2xl p-6 mx-auto mb-10">
               <h2 className="text-xl font-bold text-orange-400 mb-4">Our Presence</h2>
               <p className="text-gray-700">Our Services are present pan India.</p>
               <p className="text-gray-700">Call Service: Pan India</p>
@@ -68,7 +68,7 @@ export default function AboutUs() {
             </div>
 
             {/* Our Team */}
-            <div className="border border-orange-200 rounded-2xl p-6 max-w-4xl mx-auto">
+            <div className="border border-orange-200 rounded-2xl p-6 mx-auto">
               <h2 className="text-xl font-bold text-orange-400 mb-4">Our Team</h2>
               <p className="text-gray-700">Executer: Yashika Gupta</p>
               <p className="text-gray-700">Idea: Anju Gupta</p>

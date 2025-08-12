@@ -24,6 +24,31 @@ export default function ContactUs() {
     setSnack((s) => ({ ...s, open: false }));
   };
 
+  // Add: helper to copy text and show snackbar
+  const copyToClipboard = async (text, label = 'Copied') => {
+    try {
+      await navigator.clipboard.writeText(text);
+      openSnack(`${label} copied to clipboard.`, 'success');
+    } catch (err) {
+      // Fallback
+      const ta = document.createElement('textarea');
+      ta.value = text;
+      document.body.appendChild(ta);
+      ta.select();
+      try {
+        document.execCommand('copy');
+        openSnack(`${label} copied to clipboard.`, 'success');
+      } catch {
+        openSnack('Copy failed. Please try again.', 'error');
+      } finally {
+        document.body.removeChild(ta);
+      }
+    }
+  };
+
+  // Define your business phone once (update the number to your actual one)
+  const BUSINESS_PHONE = '+91 7756900769';
+
   // Replace with your deployed Apps Script Web App URL
   const WEB_APP_URL =
     'https://script.google.com/macros/s/AKfycby0R7T2_lSe5qT9vnBTcEMLWuWeC7RND2qNhka-r8XmDzxEHbIeiTtr8ACXFL0Nan7l/exec'
@@ -129,6 +154,15 @@ export default function ContactUs() {
             <p>
               <FaPhoneAlt className="inline text-orange-400 mr-2" />
               Call Us: <a href="tel:+917756900769" className="text-black">+91 7756900769</a>
+              <button
+                type="button"
+                onClick={() => copyToClipboard(BUSINESS_PHONE, 'Phone number')}
+                className="p-1 text-gray-600 hover:text-gray-900"
+                aria-label="Copy phone number"
+                title="Copy phone number"
+              >
+                <ContentCopyIcon fontSize="small" />
+              </button>
             </p>
             <p>
               <FaWhatsapp className="inline text-green-500 mr-2" />
