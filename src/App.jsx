@@ -2,10 +2,10 @@ import './TempApp.css'
 import React from "react";
 import 'tailwindcss';
 import WhyUsSection from './sections/WhyUS';
-import ParentsVisit from './assets/CallSubscription.jpg';
-import KidCare from './assets/Ambulance.png';
-import SpeakToParents from './assets/parents-visit.png';
-import HomePage from './assets/HomePage.png';
+import ParentsVisit from './assets/CallSubscription.webp';
+import KidCare from './assets/Ambulance.webp';
+import SpeakToParents from './assets/parents-visit.webp';
+import HomePage from './assets/HomePage.webp';
 import ServicesSection from './sections/ServicesSection';
 import { FaQq } from 'react-icons/fa';
 import FAQSection from './sections/FAQSection';
